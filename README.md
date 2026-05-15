@@ -2,6 +2,13 @@
 
 Mobile-first static dashboard for weekend family adventure picks around Sacramento.
 
+## Features
+
+- Shows five toddler-friendly family adventure ideas at a time.
+- Includes a `Refresh ideas` button that cycles through a larger pool when the current picks do not match the family's mood, nap window, budget, or weather tolerance.
+- Keeps quick filters for free, morning, indoor backup, and market / food options.
+- Provides direct event/source links and map links for each idea.
+
 ## Run locally
 
 ```powershell
@@ -23,4 +30,4 @@ Open the source links at the bottom of the dashboard each Thursday night or Frid
 - Sacramento parks departments
 - Farmers markets and Downtown Grid listings
 
-Update the `events` array in `index.html` with the best five matches for the coming weekend.
+Update the `events` array in `index.html` with the best matches for the coming weekend.
