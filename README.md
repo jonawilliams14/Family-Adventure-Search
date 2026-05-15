@@ -1,6 +1,10 @@
-# Family Adventure Agent
+# South Bay Family Adventure Agent
 
-Mobile-first static dashboard for weekend family adventure picks around Sacramento.
+Mobile-first static dashboard for toddler-friendly weekend family adventure picks around San Jose and the South Bay.
+
+## Branch
+
+This version lives on `codex/san-jose-events` so the Sacramento dashboard on `main` stays untouched.
 
 ## Run locally
 
@@ -14,13 +18,13 @@ Then open `http://localhost:8787` on this machine. For a phone on the same Wi-Fi
 
 Open the source links at the bottom of the dashboard each Thursday night or Friday morning:
 
-- Eventbrite family events
-- Fever Sacramento
-- Sacramento365 kids
-- Sacramento Public Library events
-- Fairytale Town events
-- Sacramento museum calendars
-- Sacramento parks departments
-- Farmers markets and Downtown Grid listings
+- Visit San Jose family events
+- San Jose Public Library storytimes
+- Santa Clara City Library kids events
+- Children's Discovery Museum of San Jose
+- Happy Hollow Park & Zoo
+- History San Jose / History Park
+- South Bay farmers markets
+- Eventbrite and Fever family events
 
 Update the `events` array in `index.html` with the best five matches for the coming weekend.
