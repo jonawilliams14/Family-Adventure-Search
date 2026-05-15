@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Family Adventure Agent</title>
+  <title>South Bay Family Adventure Agent</title>
   <style>
-    :root { color-scheme: light; --ink:#18211f; --muted:#66736e; --line:#d9e2dd; --paper:#fbfcf8; --panel:#fff; --leaf:#2f7d5c; --river:#2672a8; --sun:#f4b942; --shade:0 12px 30px rgba(24,33,31,.1); }
+    :root { color-scheme: light; --ink:#17211f; --muted:#62736d; --line:#d8e1dc; --paper:#fbfcf8; --panel:#fff; --leaf:#287a57; --bay:#246f9f; --sun:#f2b642; --shade:0 12px 30px rgba(23,33,31,.1); }
     * { box-sizing: border-box; }
     body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.45; }
     a { color:inherit; }
-    .app { min-height:100vh; }
-    header { background:linear-gradient(135deg,rgba(47,125,92,.92),rgba(38,114,168,.88)),url("https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?auto=format&fit=crop&w=1600&q=80"); background-size:cover; background-position:center; color:#fff; padding:26px 18px 34px; }
+    header { background:linear-gradient(135deg,rgba(40,122,87,.92),rgba(36,111,159,.88)),url("https://images.unsplash.com/photo-1574863544946-1c5f02541d31?auto=format&fit=crop&w=1600&q=80"); background-size:cover; background-position:center; color:#fff; padding:26px 18px 34px; }
     .header-inner, main, footer { max-width:980px; margin:0 auto; }
-    .eyebrow { margin:0 0 12px; font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; opacity:.86; }
-    h1 { max-width:760px; margin:0; font-size:clamp(2.1rem,9vw,4.6rem); line-height:.96; letter-spacing:0; }
+    .eyebrow { margin:0 0 12px; font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; opacity:.88; }
+    h1 { max-width:800px; margin:0; font-size:clamp(2.1rem,9vw,4.6rem); line-height:.96; letter-spacing:0; }
     .subhead { max-width:720px; margin:16px 0 0; font-size:1rem; opacity:.94; }
     .status-strip { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; max-width:980px; margin:-22px auto 0; padding:0 18px; position:relative; }
     .stat { min-height:86px; border:1px solid rgba(255,255,255,.2); border-radius:8px; background:var(--panel); box-shadow:var(--shade); padding:14px; }
@@ -24,10 +23,10 @@
     button { border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); min-height:42px; padding:0 14px; font:inherit; font-weight:750; cursor:pointer; }
     button[aria-pressed="true"] { border-color:var(--leaf); background:var(--leaf); color:#fff; }
     .grid { display:grid; grid-template-columns:1fr; gap:14px; }
-    .card { border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:0 3px 16px rgba(24,33,31,.06); overflow:hidden; }
+    .card { border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:0 3px 16px rgba(23,33,31,.06); overflow:hidden; }
     .card-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:16px 16px 0; }
     h2 { margin:0; font-size:1.15rem; line-height:1.18; }
-    .score { flex:0 0 auto; display:grid; place-items:center; width:52px; height:52px; border-radius:50%; background:#e9f5ef; color:var(--leaf); font-size:1.2rem; font-weight:900; }
+    .score { flex:0 0 auto; display:grid; place-items:center; width:52px; height:52px; border-radius:50%; background:#e8f5ee; color:var(--leaf); font-size:1.2rem; font-weight:900; }
     .meta { display:flex; flex-wrap:wrap; gap:7px; padding:12px 16px 0; }
     .pill { border-radius:999px; background:#f1f5f3; color:#3f4b47; padding:6px 9px; font-size:.78rem; font-weight:750; }
     .pill.hot { background:#fff3cf; color:#7a5200; }
@@ -38,7 +37,7 @@
     .details { display:grid; gap:8px; margin:0 0 14px; color:var(--muted); font-size:.92rem; }
     .actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
     .actions a, .search-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; border-radius:8px; text-decoration:none; font-weight:850; text-align:center; }
-    .primary { background:var(--river); color:#fff; }
+    .primary { background:var(--bay); color:#fff; }
     .secondary { border:1px solid var(--line); background:#fff; color:var(--ink); }
     .section { margin-top:28px; }
     .section h2 { margin-bottom:10px; }
@@ -53,16 +52,16 @@
   <div class="app">
     <header>
       <div class="header-inner">
-        <p class="eyebrow">Fruitdale / Sacramento</p>
-        <h1>Top 5 family adventures this weekend</h1>
-        <p class="subhead">A Friday-morning shortlist tuned for toddlers, naps, food stops, cost, distance, and this weekend's warm Sacramento forecast.</p>
+        <p class="eyebrow">San Jose / South Bay</p>
+        <h1>Top 5 toddler-friendly family adventures this weekend</h1>
+        <p class="subhead">A Friday-morning shortlist tuned for short drives, stroller flow, nap windows, warm South Bay weather, food stops, and indoor backup plans.</p>
       </div>
     </header>
     <section class="status-strip" aria-label="Weekend status">
       <div class="stat"><strong>May 16-17</strong><span>Weekend window</span></div>
-      <div class="stat"><strong>Warm</strong><span>Morning outdoor bias</span></div>
+      <div class="stat"><strong>Mild-warm</strong><span>Morning outdoor bias</span></div>
       <div class="stat"><strong>0-5</strong><span>Toddler-friendly priority</span></div>
-      <div class="stat"><strong>Fruitdale</strong><span>Trip anchor</span></div>
+      <div class="stat"><strong>San Jose</strong><span>South Bay anchor</span></div>
     </section>
     <main>
       <nav class="toolbar" aria-label="Filters">
@@ -76,28 +75,28 @@
       <section class="section">
         <h2>Refresh searches</h2>
         <div class="sources">
-          <a class="search-link" href="https://www.eventbrite.com/d/ca--sacramento/family-and-education--events--this-weekend/" target="_blank" rel="noreferrer">Eventbrite family</a>
-          <a class="search-link" href="https://feverup.com/en/sacramento" target="_blank" rel="noreferrer">Fever Sacramento</a>
-          <a class="search-link" href="https://www.sacramento365.com/categories/kids/" target="_blank" rel="noreferrer">Sacramento365 kids</a>
-          <a class="search-link" href="https://www.saclibrary.org/events" target="_blank" rel="noreferrer">Library calendar</a>
-          <a class="search-link" href="https://www.fairytaletown.org/events/" target="_blank" rel="noreferrer">Fairytale Town</a>
-          <a class="search-link" href="https://www.sachistorymuseum.org/events/" target="_blank" rel="noreferrer">History Museum</a>
-          <a class="search-link" href="https://regionalparks.saccounty.gov/Pages/default.aspx" target="_blank" rel="noreferrer">Regional Parks</a>
-          <a class="search-link" href="https://sacramento.downtowngrid.com/events/categories/familykids/" target="_blank" rel="noreferrer">Downtown family</a>
+          <a class="search-link" href="https://www.sanjose.org/events" target="_blank" rel="noreferrer">Visit San Jose</a>
+          <a class="search-link" href="https://www.sjpl.org/events/" target="_blank" rel="noreferrer">SJPL events</a>
+          <a class="search-link" href="https://santaclaraca.libcal.com/calendar/events" target="_blank" rel="noreferrer">Santa Clara Library</a>
+          <a class="search-link" href="https://www.cdm.org/visit/calendar/" target="_blank" rel="noreferrer">Children's Discovery Museum</a>
+          <a class="search-link" href="https://happyhollow.org/calendar/" target="_blank" rel="noreferrer">Happy Hollow</a>
+          <a class="search-link" href="https://historysanjose.org/events/" target="_blank" rel="noreferrer">History San Jose</a>
+          <a class="search-link" href="https://www.eventbrite.com/d/ca--san-jose/kids--events/" target="_blank" rel="noreferrer">Eventbrite kids</a>
+          <a class="search-link" href="https://feverup.com/en/san-jose" target="_blank" rel="noreferrer">Fever San Jose</a>
         </div>
-        <p class="note">Browser pages cannot reliably scrape Eventbrite, Fever, library systems, and city calendars because those sites block cross-origin reads. This dashboard keeps the high-signal picks visible and gives you one-tap source links to refresh the list each week.</p>
+        <p class="note">Some event sites block cross-origin scraping from a phone browser, so this branch keeps curated picks in the page and puts one-tap source links nearby for weekly refreshes.</p>
       </section>
     </main>
     <footer>Last curated Friday, May 15, 2026. Scores are practical planning scores, not official ratings.</footer>
   </div>
   <script>
     const events = [
-      { title:"Fairytale Town morning + Land Park brunch", score:94, tags:["morning","outdoor"], label:"Best all-around", time:"Sat or Sun morning, go early before heat", place:"3901 Land Park Dr, Sacramento", cost:"Paid admission", food:"Brunch nearby in Land Park / Freeport corridor", why:"Purpose-built for small kids, easy stroller flow, short attention-span friendly, and close enough to bail out before nap.", eventUrl:"https://www.fairytaletown.org/events/month/2026-05/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Fairytale+Town+Sacramento" },
-      { title:"Summer Resource Fair", score:91, tags:["free","morning","indoor"], label:"Free + easy", time:"Sat, May 16, 10:00 AM-1:00 PM", place:"HeartLand, 2829 Watt Ave #200, Sacramento", cost:"Free", food:"Snacks listed; Arden/Watt food nearby", why:"Free snacks, giveaways, hands-on kid activities, and a clean 10-1 window that fits a toddler morning outing.", eventUrl:"https://www.eventbrite.com/e/summer-resource-fair-tickets-1985941971898", mapUrl:"https://www.google.com/maps/search/?api=1&query=2829+Watt+Ave+Suite+200+Sacramento" },
-      { title:"California State Railroad Museum + Old Sacramento stroller loop", score:88, tags:["indoor","market"], label:"Indoor anchor", time:"Sat or Sun, late morning works well", place:"125 I St, Sacramento", cost:"Paid admission", food:"Old Sacramento restaurants and coffee nearby", why:"Big trains are high-impact toddler magic, the museum gives you shade/AC, and the waterfront loop adds movement without needing a long drive.", eventUrl:"https://www.californiarailroad.museum/visit/calendar", mapUrl:"https://www.google.com/maps/search/?api=1&query=California+State+Railroad+Museum" },
-      { title:"K Street Market at Old Sacramento Waterfront", score:84, tags:["free","market"], label:"Food + wandering", time:"Sun, May 17, 12:00-6:00 PM", place:"Old Sacramento Waterfront", cost:"Free to enter", food:"Outdoor dining and market vendors", why:"Car-free market energy, live music, snacks, and an easy pairing with the railroad museum if the afternoon nap lands kindly.", eventUrl:"https://ma.to/event/k-street-market-17-may-2026", mapUrl:"https://www.google.com/maps/search/?api=1&query=Old+Sacramento+Waterfront" },
-      { title:"Sacramento Sunday Certified Farmers Market", score:80, tags:["free","morning","market"], label:"Low-friction", time:"Sun, May 17, morning", place:"Downtown Sacramento", cost:"Free to enter", food:"Market breakfast/snacks", why:"A simple morning loop: snacks, people-watching, produce colors, and an exit whenever the nap clock starts getting loud.", eventUrl:"https://sacramento.downtowngrid.com/events/sacramentos-sunday-certified-farmers-market-2025-12-21-2026-01-11-2026-04-19-2026-04-26-2026-05-03-2026-05-10-2026-05-17-2026-05-24-2026-05-31/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Sunday+Certified+Farmers+Market" },
-      { title:"Sacramento Public Library storytime backup", score:76, tags:["free","indoor"], label:"Backup plan", time:"Check branch listings before leaving", place:"Nearest Sacramento Public Library branch", cost:"Free", food:"Pick a branch near coffee or lunch", why:"Library events are the best rainy-day or overtired-day backup: short, free, structured, and designed for babies through preschoolers.", eventUrl:"https://www.saclibrary.org/events", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Public+Library+near+Fruitdale+Sacramento" }
+      { title:"AANHPI Heritage Festival at History Park", score:93, tags:["free","morning","outdoor"], label:"Best community pick", time:"Sat, May 16, daytime festival window", place:"History Park, 635 Phelan Ave, San Jose", cost:"Free / check event details", food:"Festival vendors plus Kelley Park picnic options", why:"Open-air, stroller-friendly, colorful, and easy to pair with a short Kelley Park wander before nap time.", eventUrl:"https://historysanjose.org/events/", mapUrl:"https://www.google.com/maps/search/?api=1&query=History+Park+San+Jose" },
+      { title:"San Jose Public Library Music & Movement", score:90, tags:["free","morning","indoor"], label:"Free + toddler-built", time:"Check branch listings for Sat/Sun morning sessions", place:"San Jose Public Library branches", cost:"Free", food:"Choose a branch near coffee or lunch", why:"Short, structured, indoor, and designed for toddlers who need songs, wiggles, and a graceful exit when the nap clock wins.", eventUrl:"https://www.sjpl.org/events/", mapUrl:"https://www.google.com/maps/search/?api=1&query=San+Jose+Public+Library+near+me" },
+      { title:"Children's Discovery Museum of San Jose", score:88, tags:["indoor","morning"], label:"Indoor anchor", time:"Sat or Sun morning, arrive near opening", place:"180 Woz Way, San Jose", cost:"Paid admission", food:"Downtown San Jose and picnic spots nearby", why:"Hands-on exhibits, predictable bathrooms, stroller access, and enough toddler zones to make the trip feel worth it without overcommitting.", eventUrl:"https://www.cdm.org/visit/calendar/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Children's+Discovery+Museum+of+San+Jose" },
+      { title:"Happy Hollow Park & Zoo morning loop", score:86, tags:["morning","outdoor"], label:"Animal + rides", time:"Sat or Sun morning before the warmest part of day", place:"748 Story Rd, San Jose", cost:"Paid admission", food:"Cafe onsite; Vietnamese and Mexican food nearby", why:"Small-zoo scale, toddler rides, shade pockets, and a clear route that can be shortened fast if energy drops.", eventUrl:"https://happyhollow.org/calendar/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Happy+Hollow+Park+and+Zoo" },
+      { title:"Santa Clara Library Toddler Time", score:82, tags:["free","indoor"], label:"Low-friction backup", time:"Check Central Park Library and branch calendar", place:"Santa Clara City Library", cost:"Free", food:"Central Park picnic or nearby cafes", why:"A strong indoor backup for South Bay families: short program length, easy parking at many branches, and toddler-paced activities.", eventUrl:"https://santaclaraca.libcal.com/calendar/events", mapUrl:"https://www.google.com/maps/search/?api=1&query=Santa+Clara+City+Library" },
+      { title:"De Anza College Farmers Market snack walk", score:78, tags:["free","morning","market"], label:"Food + wandering", time:"Sun morning", place:"De Anza College, Cupertino", cost:"Free to enter", food:"Market snacks, fruit, pastries, coffee nearby", why:"A simple stroller loop with colors, snacks, and almost no commitment; great when you want an outing but not a whole production.", eventUrl:"https://www.pcfma.org/de-anza-college-farmers-market", mapUrl:"https://www.google.com/maps/search/?api=1&query=De+Anza+College+Farmers+Market" }
     ];
     const cards = document.querySelector("#cards");
     const buttons = document.querySelectorAll("button[data-filter]");
