@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Adventure Agent</title>
+  <style>
+    :root { color-scheme: light; --ink:#18211f; --muted:#66736e; --line:#d9e2dd; --paper:#fbfcf8; --panel:#fff; --leaf:#2f7d5c; --river:#2672a8; --sun:#f4b942; --shade:0 12px 30px rgba(24,33,31,.1); }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.45; }
+    a { color:inherit; }
+    .app { min-height:100vh; }
+    header { background:linear-gradient(135deg,rgba(47,125,92,.92),rgba(38,114,168,.88)),url("https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?auto=format&fit=crop&w=1600&q=80"); background-size:cover; background-position:center; color:#fff; padding:26px 18px 34px; }
+    .header-inner, main, footer { max-width:980px; margin:0 auto; }
+    .eyebrow { margin:0 0 12px; font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; opacity:.86; }
+    h1 { max-width:760px; margin:0; font-size:clamp(2.1rem,9vw,4.6rem); line-height:.96; letter-spacing:0; }
+    .subhead { max-width:720px; margin:16px 0 0; font-size:1rem; opacity:.94; }
+    .status-strip { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; max-width:980px; margin:-22px auto 0; padding:0 18px; position:relative; }
+    .stat { min-height:86px; border:1px solid rgba(255,255,255,.2); border-radius:8px; background:var(--panel); box-shadow:var(--shade); padding:14px; }
+    .stat strong { display:block; font-size:1.35rem; line-height:1.1; }
+    .stat span { display:block; margin-top:4px; color:var(--muted); font-size:.86rem; }
+    main { margin-top:24px; margin-bottom:44px; padding:0 18px; }
+    .toolbar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+    button { border:1px solid var(--line); border-radius:999px; background:#fff; color:var(--ink); min-height:42px; padding:0 14px; font:inherit; font-weight:750; cursor:pointer; }
+    button[aria-pressed="true"] { border-color:var(--leaf); background:var(--leaf); color:#fff; }
+    .grid { display:grid; grid-template-columns:1fr; gap:14px; }
+    .card { border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:0 3px 16px rgba(24,33,31,.06); overflow:hidden; }
+    .card-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; padding:16px 16px 0; }
+    h2 { margin:0; font-size:1.15rem; line-height:1.18; }
+    .score { flex:0 0 auto; display:grid; place-items:center; width:52px; height:52px; border-radius:50%; background:#e9f5ef; color:var(--leaf); font-size:1.2rem; font-weight:900; }
+    .meta { display:flex; flex-wrap:wrap; gap:7px; padding:12px 16px 0; }
+    .pill { border-radius:999px; background:#f1f5f3; color:#3f4b47; padding:6px 9px; font-size:.78rem; font-weight:750; }
+    .pill.hot { background:#fff3cf; color:#7a5200; }
+    .pill.free { background:#e8f6ed; color:#236345; }
+    .pill.indoor { background:#e9f1fb; color:#1d5e91; }
+    .body { padding:12px 16px 16px; }
+    .why { margin:0 0 12px; color:#384642; }
+    .details { display:grid; gap:8px; margin:0 0 14px; color:var(--muted); font-size:.92rem; }
+    .actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .actions a, .search-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; border-radius:8px; text-decoration:none; font-weight:850; text-align:center; }
+    .primary { background:var(--river); color:#fff; }
+    .secondary { border:1px solid var(--line); background:#fff; color:var(--ink); }
+    .section { margin-top:28px; }
+    .section h2 { margin-bottom:10px; }
+    .sources { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .search-link { border:1px solid var(--line); background:#fff; padding:12px; min-height:58px; }
+    .note { border-left:4px solid var(--sun); background:#fffaf0; padding:12px 14px; color:#594417; border-radius:0 8px 8px 0; margin-top:16px; font-size:.92rem; }
+    footer { padding:0 18px 32px; color:var(--muted); font-size:.84rem; }
+    @media (min-width:760px) { header { padding:48px 30px 74px; } .status-strip { grid-template-columns:repeat(4,minmax(0,1fr)); padding:0 30px; } main, footer { padding-left:30px; padding-right:30px; } .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .card:first-child { grid-column:span 2; } .sources { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="header-inner">
+        <p class="eyebrow">Fruitdale / Sacramento</p>
+        <h1>Top 5 family adventures this weekend</h1>
+        <p class="subhead">A Friday-morning shortlist tuned for toddlers, naps, food stops, cost, distance, and this weekend's warm Sacramento forecast.</p>
+      </div>
+    </header>
+    <section class="status-strip" aria-label="Weekend status">
+      <div class="stat"><strong>May 16-17</strong><span>Weekend window</span></div>
+      <div class="stat"><strong>Warm</strong><span>Morning outdoor bias</span></div>
+      <div class="stat"><strong>0-5</strong><span>Toddler-friendly priority</span></div>
+      <div class="stat"><strong>Fruitdale</strong><span>Trip anchor</span></div>
+    </section>
+    <main>
+      <nav class="toolbar" aria-label="Filters">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="free">Free</button>
+        <button type="button" data-filter="morning">Morning</button>
+        <button type="button" data-filter="indoor">Indoor backup</button>
+        <button type="button" data-filter="market">Market / food</button>
+      </nav>
+      <section class="grid" id="cards" aria-live="polite"></section>
+      <section class="section">
+        <h2>Refresh searches</h2>
+        <div class="sources">
+          <a class="search-link" href="https://www.eventbrite.com/d/ca--sacramento/family-and-education--events--this-weekend/" target="_blank" rel="noreferrer">Eventbrite family</a>
+          <a class="search-link" href="https://feverup.com/en/sacramento" target="_blank" rel="noreferrer">Fever Sacramento</a>
+          <a class="search-link" href="https://www.sacramento365.com/categories/kids/" target="_blank" rel="noreferrer">Sacramento365 kids</a>
+          <a class="search-link" href="https://www.saclibrary.org/events" target="_blank" rel="noreferrer">Library calendar</a>
+          <a class="search-link" href="https://www.fairytaletown.org/events/" target="_blank" rel="noreferrer">Fairytale Town</a>
+          <a class="search-link" href="https://www.sachistorymuseum.org/events/" target="_blank" rel="noreferrer">History Museum</a>
+          <a class="search-link" href="https://regionalparks.saccounty.gov/Pages/default.aspx" target="_blank" rel="noreferrer">Regional Parks</a>
+          <a class="search-link" href="https://sacramento.downtowngrid.com/events/categories/familykids/" target="_blank" rel="noreferrer">Downtown family</a>
+        </div>
+        <p class="note">Browser pages cannot reliably scrape Eventbrite, Fever, library systems, and city calendars because those sites block cross-origin reads. This dashboard keeps the high-signal picks visible and gives you one-tap source links to refresh the list each week.</p>
+      </section>
+    </main>
+    <footer>Last curated Friday, May 15, 2026. Scores are practical planning scores, not official ratings.</footer>
+  </div>
+  <script>
+    const events = [
+      { title:"Fairytale Town morning + Land Park brunch", score:94, tags:["morning","outdoor"], label:"Best all-around", time:"Sat or Sun morning, go early before heat", place:"3901 Land Park Dr, Sacramento", cost:"Paid admission", food:"Brunch nearby in Land Park / Freeport corridor", why:"Purpose-built for small kids, easy stroller flow, short attention-span friendly, and close enough to bail out before nap.", eventUrl:"https://www.fairytaletown.org/events/month/2026-05/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Fairytale+Town+Sacramento" },
+      { title:"Summer Resource Fair", score:91, tags:["free","morning","indoor"], label:"Free + easy", time:"Sat, May 16, 10:00 AM-1:00 PM", place:"HeartLand, 2829 Watt Ave #200, Sacramento", cost:"Free", food:"Snacks listed; Arden/Watt food nearby", why:"Free snacks, giveaways, hands-on kid activities, and a clean 10-1 window that fits a toddler morning outing.", eventUrl:"https://www.eventbrite.com/e/summer-resource-fair-tickets-1985941971898", mapUrl:"https://www.google.com/maps/search/?api=1&query=2829+Watt+Ave+Suite+200+Sacramento" },
+      { title:"California State Railroad Museum + Old Sacramento stroller loop", score:88, tags:["indoor","market"], label:"Indoor anchor", time:"Sat or Sun, late morning works well", place:"125 I St, Sacramento", cost:"Paid admission", food:"Old Sacramento restaurants and coffee nearby", why:"Big trains are high-impact toddler magic, the museum gives you shade/AC, and the waterfront loop adds movement without needing a long drive.", eventUrl:"https://www.californiarailroad.museum/visit/calendar", mapUrl:"https://www.google.com/maps/search/?api=1&query=California+State+Railroad+Museum" },
+      { title:"K Street Market at Old Sacramento Waterfront", score:84, tags:["free","market"], label:"Food + wandering", time:"Sun, May 17, 12:00-6:00 PM", place:"Old Sacramento Waterfront", cost:"Free to enter", food:"Outdoor dining and market vendors", why:"Car-free market energy, live music, snacks, and an easy pairing with the railroad museum if the afternoon nap lands kindly.", eventUrl:"https://ma.to/event/k-street-market-17-may-2026", mapUrl:"https://www.google.com/maps/search/?api=1&query=Old+Sacramento+Waterfront" },
+      { title:"Sacramento Sunday Certified Farmers Market", score:80, tags:["free","morning","market"], label:"Low-friction", time:"Sun, May 17, morning", place:"Downtown Sacramento", cost:"Free to enter", food:"Market breakfast/snacks", why:"A simple morning loop: snacks, people-watching, produce colors, and an exit whenever the nap clock starts getting loud.", eventUrl:"https://sacramento.downtowngrid.com/events/sacramentos-sunday-certified-farmers-market-2025-12-21-2026-01-11-2026-04-19-2026-04-26-2026-05-03-2026-05-10-2026-05-17-2026-05-24-2026-05-31/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Sunday+Certified+Farmers+Market" },
+      { title:"Sacramento Public Library storytime backup", score:76, tags:["free","indoor"], label:"Backup plan", time:"Check branch listings before leaving", place:"Nearest Sacramento Public Library branch", cost:"Free", food:"Pick a branch near coffee or lunch", why:"Library events are the best rainy-day or overtired-day backup: short, free, structured, and designed for babies through preschoolers.", eventUrl:"https://www.saclibrary.org/events", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Public+Library+near+Fruitdale+Sacramento" }
+    ];
+    const cards = document.querySelector("#cards");
+    const buttons = document.querySelectorAll("button[data-filter]");
+    function render(filter = "all") {
+      const filtered = events.filter((event) => filter === "all" || event.tags.includes(filter));
+      cards.innerHTML = filtered.map((event) => `<article class="card"><div class="card-top"><div><h2>${event.title}</h2><div class="meta"><span class="pill hot">${event.label}</span>${event.tags.map((tag) => `<span class="pill ${tag}">${tag}</span>`).join("")}</div></div><div class="score" aria-label="Score ${event.score}">${event.score}</div></div><div class="body"><p class="why">${event.why}</p><div class="details"><div><strong>When:</strong> ${event.time}</div><div><strong>Where:</strong> ${event.place}</div><div><strong>Cost:</strong> ${event.cost}</div><div><strong>Food:</strong> ${event.food}</div></div><div class="actions"><a class="primary" href="${event.eventUrl}" target="_blank" rel="noreferrer">Event page</a><a class="secondary" href="${event.mapUrl}" target="_blank" rel="noreferrer">Map</a></div></div></article>`).join("");
+    }
+    buttons.forEach((button) => { button.addEventListener("click", () => { buttons.forEach((other) => other.setAttribute("aria-pressed", "false")); button.setAttribute("aria-pressed", "true"); render(button.dataset.filter); }); });
+    render();
+  </script>
+</body>
+</html>
