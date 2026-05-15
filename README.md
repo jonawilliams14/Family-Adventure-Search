@@ -1,6 +1,6 @@
 # Family Adventure Agent
 
-Mobile-first static dashboard for weekend family adventure picks around Fruitdale / Sacramento.
+Mobile-first static dashboard for weekend family adventure picks around Sacramento.
 
 ## Run locally
 
