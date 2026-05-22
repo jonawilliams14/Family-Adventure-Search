@@ -4,22 +4,17 @@ Mobile-first static dashboard for weekend family adventure picks around Sacramen
 
 ## Features
 
+- Loads weekend activities from `data/events.json` so the site can update without changing the HTML.
 - Shows five toddler-friendly family adventure ideas at a time.
 - Includes a `Refresh ideas` button that cycles through a larger pool when the current picks do not match the family's mood, nap window, budget, or weather tolerance.
 - Keeps quick filters for free, morning, indoor backup, and market / food options.
 - Provides direct event/source links and map links for each idea.
 
-## Run locally
+## Dynamic weekend refresh
 
-```powershell
-python -m http.server 8787
-```
+The weekly Codex automation refreshes `data/events.json` every Friday morning for the coming weekend. It searches Sacramento-area family event sources, scores toddler-friendly options, commits the updated JSON to `main`, and GitHub Pages redeploys the site.
 
-Then open `http://localhost:8787` on this machine. For a phone on the same Wi-Fi, use this machine's local IP address with port `8787`.
-
-## Weekly refresh flow
-
-Open the source links at the bottom of the dashboard each Thursday night or Friday morning:
+Primary sources:
 
 - Eventbrite family events
 - Fever Sacramento
@@ -30,4 +25,14 @@ Open the source links at the bottom of the dashboard each Thursday night or Frid
 - Sacramento parks departments
 - Farmers markets and Downtown Grid listings
 
-Update the `events` array in `index.html` with the best matches for the coming weekend.
+## Run locally
+
+```powershell
+python -m http.server 8787
+```
+
+Then open `http://localhost:8787` on this machine. For a phone on the same Wi-Fi, use this machine's local IP address with port `8787`.
+
+## Manual refresh
+
+If the automation needs a manual override, update `data/events.json` with the best matches for the upcoming weekend. Keep the same field names so `index.html` can render the page without code changes.
