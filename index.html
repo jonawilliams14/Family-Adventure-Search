@@ -13,8 +13,8 @@
     header { background:linear-gradient(135deg,rgba(47,125,92,.92),rgba(38,114,168,.88)),url("https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?auto=format&fit=crop&w=1600&q=80"); background-size:cover; background-position:center; color:#fff; padding:26px 18px 34px; }
     .header-inner, main, footer { max-width:980px; margin:0 auto; }
     .eyebrow { margin:0 0 12px; font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; opacity:.86; }
-    h1 { max-width:760px; margin:0; font-size:clamp(2.1rem,9vw,4.6rem); line-height:.96; letter-spacing:0; }
-    .subhead { max-width:720px; margin:16px 0 0; font-size:1rem; opacity:.94; }
+    h1 { max-width:780px; margin:0; font-size:clamp(2.1rem,9vw,4.6rem); line-height:.96; letter-spacing:0; }
+    .subhead { max-width:760px; margin:16px 0 0; font-size:1rem; opacity:.94; }
     .status-strip { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; max-width:980px; margin:-22px auto 0; padding:0 18px; position:relative; }
     .stat { min-height:86px; border:1px solid rgba(255,255,255,.2); border-radius:8px; background:var(--panel); box-shadow:var(--shade); padding:14px; }
     .stat strong { display:block; font-size:1.35rem; line-height:1.1; }
@@ -56,16 +56,16 @@
   <div class="app">
     <header>
       <div class="header-inner">
-        <p class="eyebrow">Fruitdale / Sacramento</p>
-        <h1>Top 5 family adventures this weekend</h1>
-        <p class="subhead">A Friday-morning shortlist tuned for toddlers, naps, food stops, cost, distance, and the weekend forecast.</p>
+        <p class="eyebrow">Sacramento + 45-minute drive</p>
+        <h1>Top family adventures, festivals, markets, and food finds</h1>
+        <p class="subhead">A Friday-morning shortlist tuned for toddlers, nap windows, cost, food stops, festival energy, and weekend weather.</p>
       </div>
     </header>
     <section class="status-strip" aria-label="Weekend status">
       <div class="stat"><strong id="weekendLabel">Loading</strong><span>Weekend window</span></div>
       <div class="stat"><strong id="weatherSummary">Loading</strong><span>Weather-aware bias</span></div>
-      <div class="stat"><strong id="audienceLabel">0-5</strong><span>Toddler-friendly priority</span></div>
-      <div class="stat"><strong id="anchorLabel">Fruitdale</strong><span>Trip anchor</span></div>
+      <div class="stat"><strong id="maxEventsLabel">Up to 50</strong><span>Event pool</span></div>
+      <div class="stat"><strong id="radiusLabel">45 min</strong><span>Search radius</span></div>
     </section>
     <main>
       <nav class="toolbar" aria-label="Filters">
@@ -73,7 +73,9 @@
         <button type="button" data-filter="free">Free</button>
         <button type="button" data-filter="morning">Morning</button>
         <button type="button" data-filter="indoor">Indoor backup</button>
-        <button type="button" data-filter="market">Market / food</button>
+        <button type="button" data-filter="festival">Festivals</button>
+        <button type="button" data-filter="market">Markets / food</button>
+        <button type="button" data-filter="tasting">Tastings</button>
       </nav>
       <div class="cyclebar">
         <button class="refresh" type="button" id="refreshIdeas">Refresh ideas</button>
@@ -83,29 +85,30 @@
       <section class="section">
         <h2>Refresh searches</h2>
         <div class="sources">
-          <a class="search-link" href="https://www.eventbrite.com/d/ca--sacramento/family-and-education--events--this-weekend/" target="_blank" rel="noreferrer">Eventbrite family</a>
+          <a class="search-link" href="https://www.eventbrite.com/d/ca--sacramento/festivals/" target="_blank" rel="noreferrer">Eventbrite festivals</a>
+          <a class="search-link" href="https://www.eventbrite.com/d/ca--sacramento/food-and-drink--events/" target="_blank" rel="noreferrer">Eventbrite food</a>
           <a class="search-link" href="https://feverup.com/en/sacramento" target="_blank" rel="noreferrer">Fever Sacramento</a>
-          <a class="search-link" href="https://www.sacramento365.com/categories/kids/" target="_blank" rel="noreferrer">Sacramento365 kids</a>
-          <a class="search-link" href="https://www.saclibrary.org/events" target="_blank" rel="noreferrer">Library calendar</a>
-          <a class="search-link" href="https://www.fairytaletown.org/events/" target="_blank" rel="noreferrer">Fairytale Town</a>
-          <a class="search-link" href="https://www.sachistorymuseum.org/events/" target="_blank" rel="noreferrer">History Museum</a>
-          <a class="search-link" href="https://regionalparks.saccounty.gov/Pages/default.aspx" target="_blank" rel="noreferrer">Regional Parks</a>
+          <a class="search-link" href="https://www.sacramento365.com/categories/festivals/" target="_blank" rel="noreferrer">Sacramento365 festivals</a>
+          <a class="search-link" href="https://www.sacramento365.com/categories/food-wine/" target="_blank" rel="noreferrer">Sacramento365 food</a>
           <a class="search-link" href="https://sacramento.downtowngrid.com/events/categories/familykids/" target="_blank" rel="noreferrer">Downtown family</a>
+          <a class="search-link" href="https://sacramento.downtowngrid.com/events/categories/food-drink/" target="_blank" rel="noreferrer">Downtown food</a>
+          <a class="search-link" href="https://www.saclibrary.org/events" target="_blank" rel="noreferrer">Library calendar</a>
         </div>
-        <p class="note" id="dataNote">This page loads its weekend activity list from <code>data/events.json</code>. The weekly agent updates that file, and this page changes without editing the HTML.</p>
+        <p class="note" id="dataNote">This page loads its weekend activity list from <code>data/events.json</code>. The weekly agent updates that file with up to 50 events across Sacramento and roughly a 45-minute drive.</p>
       </section>
     </main>
     <footer id="footerText">Scores are practical planning scores, not official ratings.</footer>
   </div>
   <script>
-    const fallbackData = { generated_at:"2026-05-22T07:00:00-07:00", weekend_label:"May 23-25", weather_summary:"Warm", anchor:"Fruitdale", audience:"0-5", events:[
+    const fallbackData = { generated_at:"2026-05-22T07:00:00-07:00", weekend_label:"May 23-25", weather_summary:"Warm", search_radius_label:"45 min", max_events:50, events:[
       { title:"Fairytale Town morning + Land Park brunch", score:94, tags:["morning","outdoor"], label:"Best all-around", time:"Sat or Sun morning", place:"3901 Land Park Dr, Sacramento", cost:"Paid admission", food:"Land Park / Freeport corridor", why:"Purpose-built for small kids, easy stroller flow, and close enough to bail out before nap.", eventUrl:"https://www.fairytaletown.org/events/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Fairytale+Town+Sacramento" },
       { title:"Sacramento Public Library storytime backup", score:89, tags:["free","indoor","morning"], label:"Free + easy", time:"Check branch listings", place:"Nearest Sacramento Public Library branch", cost:"Free", food:"Pick a branch near coffee or lunch", why:"Short, structured, indoor, and designed for babies through preschoolers.", eventUrl:"https://www.saclibrary.org/events", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Public+Library+near+Fruitdale+Sacramento" },
-      { title:"California State Railroad Museum + Old Sacramento stroller loop", score:88, tags:["indoor","market"], label:"Indoor anchor", time:"Sat or Sun late morning", place:"125 I St, Sacramento", cost:"Paid admission", food:"Old Sacramento restaurants nearby", why:"Big trains are toddler magic, with shade/AC and a waterfront stroller loop.", eventUrl:"https://www.californiarailroad.museum/visit/calendar", mapUrl:"https://www.google.com/maps/search/?api=1&query=California+State+Railroad+Museum" },
-      { title:"SMUD Museum of Science and Curiosity", score:86, tags:["indoor","morning"], label:"Hands-on backup", time:"Sat or Sun morning", place:"400 Jibboom St, Sacramento", cost:"Paid admission", food:"Downtown / Old Sacramento", why:"Interactive exhibits, stroller access, bathrooms, and indoor novelty.", eventUrl:"https://visitmosac.org/calendar/", mapUrl:"https://www.google.com/maps/search/?api=1&query=SMUD+Museum+of+Science+and+Curiosity" },
-      { title:"Sacramento Sunday Certified Farmers Market", score:82, tags:["free","morning","market"], label:"Low-friction", time:"Sun morning", place:"Downtown Sacramento", cost:"Free to enter", food:"Market snacks", why:"A simple morning loop with snacks, colors, and an easy exit.", eventUrl:"https://sacramento.downtowngrid.com/events/categories/familykids/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Sunday+Certified+Farmers+Market" }
+      { title:"California State Railroad Museum + Old Sacramento stroller loop", score:88, tags:["indoor","market","food"], label:"Indoor anchor", time:"Sat or Sun late morning", place:"125 I St, Sacramento", cost:"Paid admission", food:"Old Sacramento restaurants nearby", why:"Big trains are toddler magic, with shade/AC and a waterfront stroller loop.", eventUrl:"https://www.californiarailroad.museum/visit/calendar", mapUrl:"https://www.google.com/maps/search/?api=1&query=California+State+Railroad+Museum" },
+      { title:"Sacramento Sunday Certified Farmers Market", score:82, tags:["free","morning","market","food"], label:"Low-friction", time:"Sun morning", place:"Downtown Sacramento", cost:"Free to enter", food:"Market snacks", why:"A simple morning loop with snacks, colors, and an easy exit.", eventUrl:"https://sacramento.downtowngrid.com/events/categories/food-drink/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Sunday+Certified+Farmers+Market" },
+      { title:"German Maifest family festival", score:78, tags:["festival","food"], label:"Food + culture", time:"Check weekend schedule", place:"Sacramento Turn Verein", cost:"Check event page", food:"German food and family-friendly festival snacks", why:"A culture-forward festival option with food, music, and enough movement to keep a toddler engaged in short bursts.", eventUrl:"https://sacramento365.com/event/maifest-2026/", mapUrl:"https://www.google.com/maps/search/?api=1&query=Sacramento+Turn+Verein" }
     ]};
     const pageSize = 5;
+    const filterAliases = { market:["market","food"], tasting:["tasting","food"], festival:["festival"] };
     let pageIndex = 0;
     let activeFilter = "all";
     let events = [];
@@ -115,15 +118,16 @@
     const setLabel = document.querySelector("#setLabel");
     const weekendLabel = document.querySelector("#weekendLabel");
     const weatherSummary = document.querySelector("#weatherSummary");
-    const audienceLabel = document.querySelector("#audienceLabel");
-    const anchorLabel = document.querySelector("#anchorLabel");
+    const maxEventsLabel = document.querySelector("#maxEventsLabel");
+    const radiusLabel = document.querySelector("#radiusLabel");
     const footerText = document.querySelector("#footerText");
     function formatGenerated(value) { const date = new Date(value); return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" }); }
+    function matchesFilter(event) { if (activeFilter === "all") return true; const wanted = filterAliases[activeFilter] || [activeFilter]; return wanted.some((tag) => event.tags.includes(tag)); }
     function currentSet() { const start = (pageIndex * pageSize) % events.length; return Array.from({ length: Math.min(pageSize, events.length) }, (_, offset) => events[(start + offset) % events.length]); }
     function render() {
       if (!events.length) { cards.innerHTML = `<div class="empty">No weekend ideas loaded yet.</div>`; return; }
       const shown = currentSet();
-      const filtered = shown.filter((event) => activeFilter === "all" || event.tags.includes(activeFilter));
+      const filtered = shown.filter(matchesFilter);
       const start = (pageIndex * pageSize) % events.length + 1;
       const end = Math.min(start + pageSize - 1, events.length);
       setLabel.textContent = `Showing ideas ${start}-${end} of ${events.length}`;
@@ -131,16 +135,16 @@
       cards.innerHTML = filtered.map((event) => `<article class="card"><div class="card-top"><div><h2>${event.title}</h2><div class="meta"><span class="pill hot">${event.label}</span>${event.tags.map((tag) => `<span class="pill ${tag}">${tag}</span>`).join("")}</div></div><div class="score" aria-label="Score ${event.score}">${event.score}</div></div><div class="body"><p class="why">${event.why}</p><div class="details"><div><strong>When:</strong> ${event.time}</div><div><strong>Where:</strong> ${event.place}</div><div><strong>Cost:</strong> ${event.cost}</div><div><strong>Food:</strong> ${event.food}</div></div><div class="actions"><a class="primary" href="${event.eventUrl}" target="_blank" rel="noreferrer">Event page</a><a class="secondary" href="${event.mapUrl}" target="_blank" rel="noreferrer">Map</a></div></div></article>`).join("");
     }
     function hydrate(data) {
-      events = Array.isArray(data.events) ? data.events : fallbackData.events;
+      events = Array.isArray(data.events) ? data.events.slice(0, data.max_events || 50) : fallbackData.events;
       pageIndex = 0;
       weekendLabel.textContent = data.weekend_label || fallbackData.weekend_label;
       weatherSummary.textContent = data.weather_summary || fallbackData.weather_summary;
-      audienceLabel.textContent = data.audience || fallbackData.audience;
-      anchorLabel.textContent = data.anchor || fallbackData.anchor;
+      maxEventsLabel.textContent = `Up to ${data.max_events || fallbackData.max_events || 50}`;
+      radiusLabel.textContent = data.search_radius_label || fallbackData.search_radius_label;
       footerText.textContent = `Last refreshed ${formatGenerated(data.generated_at || fallbackData.generated_at)}. Scores are practical planning scores, not official ratings.`;
       render();
     }
-    buttons.forEach((button) => { button.addEventListener("click", () => { buttons.forEach((other) => other.setAttribute("aria-pressed", "false")); button.setAttribute("aria-pressed", "true"); activeFilter = button.dataset.filter; render(); }); });
+    buttons.forEach((button) => { button.addEventListener("click", () => { buttons.forEach((other) => other.setAttribute("aria-pressed", "false")); button.setAttribute("aria-pressed", "true"); activeFilter = button.dataset.filter; pageIndex = 0; render(); }); });
     refreshIdeas.addEventListener("click", () => { if (!events.length) return; pageIndex = (pageIndex + 1) % Math.ceil(events.length / pageSize); render(); });
     fetch("data/events.json", { cache:"no-store" }).then((response) => response.ok ? response.json() : fallbackData).then(hydrate).catch(() => hydrate(fallbackData));
   </script>
