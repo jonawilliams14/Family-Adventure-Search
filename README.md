@@ -39,6 +39,16 @@ Primary sources:
 - Downtown Grid food/drink and family listings
 - Nearby city calendars within about 45 minutes, including Davis, Elk Grove, Folsom, Roseville, Rancho Cordova, Carmichael, Woodland, and West Sacramento
 
+## Tests
+
+Run the link checker before publishing event updates:
+
+```powershell
+npm test
+```
+
+The test reads `index.html` and `data/events.json`, extracts all HTTP(S) links, and verifies that each one resolves to an active webpage. It also runs automatically in GitHub Actions on pushes, pull requests, and manual workflow runs.
+
 ## Run locally
 
 ```powershell
