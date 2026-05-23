@@ -45,6 +45,9 @@ Primary search categories:
 Primary sources:
 
 - Eventbrite family, festival, and food/drink events
+- Ticketmaster Sacramento family events and children's shows
+- AllEvents Sacramento kids events and family discovery pages
+- StubHub Sacramento family, theatre, and show listings, cross-checked against primary sources when possible
 - Fever Sacramento
 - Sacramento365 kids, festivals, and food/wine
 - Sacramento Public Library events
