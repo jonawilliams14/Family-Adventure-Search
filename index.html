@@ -35,10 +35,16 @@
     .pill.hot { background:#fff3cf; color:#7a5200; }
     .pill.free { background:#e8f6ed; color:#236345; }
     .pill.indoor { background:#e9f1fb; color:#1d5e91; }
+    .pill.caution { background:#fff0e8; color:#94430f; }
     .body { padding:12px 16px 16px; }
     .why { margin:0 0 12px; color:#384642; }
     .details { display:grid; gap:8px; margin:0 0 14px; color:var(--muted); font-size:.92rem; }
-    .actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .quality, .score-breakdown, .cautions { border-top:1px solid var(--line); margin-top:12px; padding-top:12px; }
+    .quality { display:grid; gap:6px; color:var(--muted); font-size:.88rem; }
+    .score-breakdown { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; color:var(--muted); font-size:.86rem; }
+    .score-breakdown span { display:flex; justify-content:space-between; gap:8px; border-radius:8px; background:#f6f8f7; padding:8px; }
+    .cautions { display:flex; flex-wrap:wrap; gap:7px; }
+    .actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:14px; }
     .actions a, .search-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; border-radius:8px; text-decoration:none; font-weight:850; text-align:center; }
     .primary { background:var(--river); color:#fff; }
     .secondary { border:1px solid var(--line); background:#fff; color:var(--ink); }
@@ -49,7 +55,7 @@
     .note { border-left:4px solid var(--sun); background:#fffaf0; padding:12px 14px; color:#594417; border-radius:0 8px 8px 0; margin-top:16px; font-size:.92rem; }
     .empty { border:1px dashed var(--line); border-radius:8px; background:#fff; color:var(--muted); padding:22px; text-align:center; }
     footer { padding:0 18px 32px; color:var(--muted); font-size:.84rem; }
-    @media (min-width:760px) { header { padding:48px 30px 74px; } .status-strip { grid-template-columns:repeat(4,minmax(0,1fr)); padding:0 30px; } main, footer { padding-left:30px; padding-right:30px; } .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .card:first-child { grid-column:span 2; } .sources { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+    @media (min-width:760px) { header { padding:48px 30px 74px; } .status-strip { grid-template-columns:repeat(3,minmax(0,1fr)); padding:0 30px; } main, footer { padding-left:30px; padding-right:30px; } .grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .card:first-child { grid-column:span 2; } .sources { grid-template-columns:repeat(4,minmax(0,1fr)); } }
   </style>
 </head>
 <body>
@@ -62,9 +68,11 @@
       </div>
     </header>
     <section class="status-strip" aria-label="Weekend status">
+      <div class="stat"><strong id="lastUpdatedLabel">Loading</strong><span>Last updated</span></div>
+      <div class="stat"><strong id="eventCountLabel">Loading</strong><span>Events loaded</span></div>
+      <div class="stat"><strong id="sourceCountLabel">Loading</strong><span>Sources checked</span></div>
       <div class="stat"><strong id="weekendLabel">Loading</strong><span>Weekend window</span></div>
       <div class="stat"><strong id="weatherSummary">Loading</strong><span>Weather-aware bias</span></div>
-      <div class="stat"><strong id="maxEventsLabel">Up to 50</strong><span>Event pool</span></div>
       <div class="stat"><strong id="radiusLabel">45 min</strong><span>Search radius</span></div>
     </section>
     <main>
@@ -118,11 +126,44 @@
     const setLabel = document.querySelector("#setLabel");
     const weekendLabel = document.querySelector("#weekendLabel");
     const weatherSummary = document.querySelector("#weatherSummary");
-    const maxEventsLabel = document.querySelector("#maxEventsLabel");
+    const lastUpdatedLabel = document.querySelector("#lastUpdatedLabel");
+    const eventCountLabel = document.querySelector("#eventCountLabel");
+    const sourceCountLabel = document.querySelector("#sourceCountLabel");
     const radiusLabel = document.querySelector("#radiusLabel");
     const footerText = document.querySelector("#footerText");
-    function formatGenerated(value) { const date = new Date(value); return Number.isNaN(date.getTime()) ? value : date.toLocaleDateString(undefined, { month:"short", day:"numeric", year:"numeric" }); }
-    function matchesFilter(event) { if (activeFilter === "all") return true; const wanted = filterAliases[activeFilter] || [activeFilter]; return wanted.some((tag) => event.tags.includes(tag)); }
+    function formatGenerated(value) { const date = new Date(value); return Number.isNaN(date.getTime()) ? value : date.toLocaleString(undefined, { month:"short", day:"numeric", hour:"numeric", minute:"2-digit" }); }
+    function formatEventWindow(event) {
+      const start = new Date(event.startDateTime);
+      if (Number.isNaN(start.getTime())) return event.time;
+      const date = start.toLocaleDateString(undefined, { weekday:"short", month:"short", day:"numeric" });
+      const startTime = start.toLocaleTimeString(undefined, { hour:"numeric", minute:"2-digit" });
+      const end = new Date(event.endDateTime);
+      if (Number.isNaN(end.getTime())) return `${date}, ${startTime}`;
+      const endTime = end.toLocaleTimeString(undefined, { hour:"numeric", minute:"2-digit" });
+      return `${date}, ${startTime}-${endTime}`;
+    }
+    function sourceCount(dataEvents) {
+      const sources = new Set(dataEvents.map((event) => event.sourceName).filter(Boolean));
+      return sources.size;
+    }
+    function confidenceLabel(value) {
+      if (typeof value !== "number") return "Confidence not set";
+      return `${Math.round(value * 100)}% confidence`;
+    }
+    function renderScoreBreakdown(event) {
+      if (!event.scoreBreakdown) return "";
+      const labels = { distance:"Distance", toddlerFit:"Toddler", cost:"Cost", weather:"Weather", food:"Food", timing:"Timing" };
+      return `<div class="score-breakdown" aria-label="Score breakdown">${Object.entries(labels).map(([key, label]) => {
+        const value = event.scoreBreakdown[key];
+        return typeof value === "number" ? `<span><strong>${label}</strong>${value}</span>` : "";
+      }).join("")}</div>`;
+    }
+    function renderCautions(event) {
+      const cautions = Array.isArray(event.cautions) ? event.cautions : [];
+      if (!cautions.length) return "";
+      return `<div class="cautions" aria-label="Planning cautions">${cautions.map((tag) => `<span class="pill caution">${tag}</span>`).join("")}</div>`;
+    }
+    function matchesFilter(event) { if (activeFilter === "all") return true; const wanted = filterAliases[activeFilter] || [activeFilter]; const tags = Array.isArray(event.tags) ? event.tags : []; return wanted.some((tag) => tags.includes(tag)); }
     function currentSet() { const start = (pageIndex * pageSize) % events.length; return Array.from({ length: Math.min(pageSize, events.length) }, (_, offset) => events[(start + offset) % events.length]); }
     function render() {
       if (!events.length) { cards.innerHTML = `<div class="empty">No weekend ideas loaded yet.</div>`; return; }
@@ -132,14 +173,16 @@
       const end = Math.min(start + pageSize - 1, events.length);
       setLabel.textContent = `Showing ideas ${start}-${end} of ${events.length}`;
       if (!filtered.length) { cards.innerHTML = `<div class="empty">No ${activeFilter} ideas in this set. Tap Refresh ideas again or choose All.</div>`; return; }
-      cards.innerHTML = filtered.map((event) => `<article class="card"><div class="card-top"><div><h2>${event.title}</h2><div class="meta"><span class="pill hot">${event.label}</span>${event.tags.map((tag) => `<span class="pill ${tag}">${tag}</span>`).join("")}</div></div><div class="score" aria-label="Score ${event.score}">${event.score}</div></div><div class="body"><p class="why">${event.why}</p><div class="details"><div><strong>When:</strong> ${event.time}</div><div><strong>Where:</strong> ${event.place}</div><div><strong>Cost:</strong> ${event.cost}</div><div><strong>Food:</strong> ${event.food}</div></div><div class="actions"><a class="primary" href="${event.eventUrl}" target="_blank" rel="noreferrer">Event page</a><a class="secondary" href="${event.mapUrl}" target="_blank" rel="noreferrer">Map</a></div></div></article>`).join("");
+      cards.innerHTML = filtered.map((event) => `<article class="card"><div class="card-top"><div><h2>${event.title}</h2><div class="meta"><span class="pill hot">${event.label}</span>${(event.tags || []).map((tag) => `<span class="pill ${tag}">${tag}</span>`).join("")}</div></div><div class="score" aria-label="Score ${event.score}">${event.score}</div></div><div class="body"><p class="why">${event.why}</p><div class="details"><div><strong>When:</strong> ${formatEventWindow(event)}</div><div><strong>Where:</strong> ${event.place}</div><div><strong>Cost:</strong> ${event.cost}</div><div><strong>Food:</strong> ${event.food}</div></div><div class="quality"><div><strong>Source:</strong> ${event.sourceName || "Source not set"}${event.sourceType ? ` (${event.sourceType})` : ""}</div><div><strong>Quality:</strong> ${confidenceLabel(event.confidence)}</div></div>${renderScoreBreakdown(event)}${renderCautions(event)}<div class="actions"><a class="primary" href="${event.eventUrl}" target="_blank" rel="noreferrer">Event page</a><a class="secondary" href="${event.mapUrl}" target="_blank" rel="noreferrer">Map</a></div></div></article>`).join("");
     }
     function hydrate(data) {
       events = Array.isArray(data.events) ? data.events.slice(0, data.max_events || 50) : fallbackData.events;
       pageIndex = 0;
       weekendLabel.textContent = data.weekend_label || fallbackData.weekend_label;
       weatherSummary.textContent = data.weather_summary || fallbackData.weather_summary;
-      maxEventsLabel.textContent = `Up to ${data.max_events || fallbackData.max_events || 50}`;
+      lastUpdatedLabel.textContent = formatGenerated(data.generated_at || fallbackData.generated_at);
+      eventCountLabel.textContent = events.length;
+      sourceCountLabel.textContent = data.source_count || sourceCount(events);
       radiusLabel.textContent = data.search_radius_label || fallbackData.search_radius_label;
       footerText.textContent = `Last refreshed ${formatGenerated(data.generated_at || fallbackData.generated_at)}. Scores are practical planning scores, not official ratings.`;
       render();
