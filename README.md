@@ -1,11 +1,11 @@
 # Family Adventure Agent
 
-Mobile-first static dashboard for weekend family adventure picks around Sacramento.
+Mobile-first static dashboard for weekend family adventure picks around Sunnyvale, the South Bay, and select bigger Bay Area events.
 
 ## Features
 
 - Loads weekend activities from `data/events.json` so the site can update without changing the HTML.
-- Searches Sacramento plus roughly a 45-minute driving radius from Fruitdale.
+- Searches Sunnyvale, Cupertino, San Jose, Milpitas, Mountain View, and larger Bay Area events worth the drive.
 - Supports up to 50 weekend events in the data file, shown five at a time.
 - Shows the last refresh time, loaded event count, and distinct source count so a Friday update is easy to verify.
 - Prioritizes toddler-friendly family activities, festivals, new markets, farmers markets, food pop-ups, and food tasting events.
@@ -15,7 +15,7 @@ Mobile-first static dashboard for weekend family adventure picks around Sacramen
 
 ## Dynamic weekend refresh
 
-The weekly Codex automation refreshes `data/events.json` every Friday morning for the coming weekend. It searches Sacramento-area and nearby regional sources, scores toddler-friendly options, commits the updated JSON to `main`, and GitHub Pages redeploys the site.
+The weekly Codex automation refreshes `data/events.json` every Friday morning for the coming weekend. It searches South Bay and Bay Area sources, scores toddler-friendly options, commits the updated JSON to `main`, and GitHub Pages redeploys the site.
 
 The page should make a refresh verifiable at a glance:
 
@@ -25,7 +25,7 @@ The page should make a refresh verifiable at a glance:
 
 Each event should include source quality and planning metadata:
 
-- `sourceName`: human-readable source, such as `Sacramento Public Library`.
+- `sourceName`: human-readable source, such as `San Jose Public Library`.
 - `sourceType`: source category, such as `official`, `official calendar`, `curated calendar`, or `search result`.
 - `confidence`: decimal from `0` to `1` for how reliable/specific the source match is.
 - `startDateTime` and `endDateTime`: ISO timestamps with timezone offset for sorting and stale-event checks.
@@ -44,19 +44,23 @@ Primary search categories:
 
 Primary sources:
 
-- Eventbrite family, festival, and food/drink events
-- Ticketmaster Sacramento family events and children's shows
-- AllEvents Sacramento kids events and family discovery pages
-- StubHub Sacramento family, theatre, and show listings, cross-checked against primary sources when possible
-- Fever Sacramento
-- Sacramento365 kids, festivals, and food/wine
-- Sacramento Public Library events
-- Fairytale Town events
+- City of Sunnyvale events calendar
+- Cupertino Parks and Recreation events calendar
+- Mountain View events and library calendars
+- Milpitas events calendar
+- Visit San Jose family-friendly listings
+- San Jose Public Library events
+- Bay Area Kids GO
+- BayAreaKidsGuide.com calendar
+- Eventbrite South Bay family, festival, and food/drink events
+- Ticketmaster San Jose family events and children's shows
+- AllEvents Sunnyvale and South Bay kids event discovery pages
+- StubHub San Jose / Bay Area family, theatre, and show listings, cross-checked against primary sources when possible
+- SF Station Bay Area family and children calendar
 - Museum and zoo calendars
 - Parks department calendars
 - Farmers market calendars
-- Downtown Grid food/drink and family listings
-- Nearby city calendars within about 45 minutes, including Davis, Elk Grove, Folsom, Roseville, Rancho Cordova, Carmichael, Woodland, and West Sacramento
+- Larger Bay Area event calendars when an event is unusually strong for families
 
 ## Tests
 
