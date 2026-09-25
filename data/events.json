@@ -51,6 +51,88 @@
       "score": 94
     },
     {
+      "title": "Reid-Hillview Airport Community Day",
+      "scoreBreakdown": {
+        "distance": 7,
+        "toddlerFit": 10,
+        "weatherFit": 10,
+        "cost": 10,
+        "food": 9,
+        "napFit": 9,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 10
+      },
+      "tags": [
+        "free",
+        "morning",
+        "festival",
+        "food",
+        "outdoor"
+      ],
+      "cautions": [
+        "crowded",
+        "loud",
+        "longer-drive"
+      ],
+      "label": "Best free spectacle",
+      "time": "Sat, Sep 26, 10:00 AM-3:00 PM",
+      "startDateTime": "2026-09-26T10:00:00-07:00",
+      "endDateTime": "2026-09-26T15:00:00-07:00",
+      "place": "Reid-Hillview Airport, San Jose",
+      "cost": "Free",
+      "food": "Food vendors onsite",
+      "why": "Historic aircraft, hands-on science and art, robots, live music, an RC airshow, flyovers, and a huge exhibitor field make this unusually strong for vehicle-loving toddlers.",
+      "sourceName": "Friends of Reid-Hillview Airport",
+      "sourceType": "official event page",
+      "confidence": "high",
+      "eventUrl": "https://www.friendsofrhv.org/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Reid-Hillview+Airport+2500+Cunningham+Ave+San+Jose+CA",
+      "score": 90
+    },
+    {
+      "title": "Mid-Autumn Moon Festival at Children's Discovery Museum",
+      "scoreBreakdown": {
+        "distance": 8,
+        "toddlerFit": 10,
+        "weatherFit": 10,
+        "cost": 8,
+        "food": 9,
+        "napFit": 9,
+        "strollerLogistics": 9,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 10
+      },
+      "tags": [
+        "morning",
+        "indoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "crowded",
+        "parking-hard",
+        "loud"
+      ],
+      "label": "Best overall",
+      "time": "Sat, Sep 26, museum 9:30 AM-4:30 PM; special programming 11:00 AM-3:00 PM",
+      "startDateTime": "2026-09-26T09:30:00-07:00",
+      "endDateTime": "2026-09-26T16:30:00-07:00",
+      "place": "Children's Discovery Museum of San Jose",
+      "cost": "Included with museum admission; memberships and discounts may apply",
+      "food": "Museum food options and downtown San Jose restaurants nearby",
+      "why": "A near-perfect toddler outing with lion dances at 11:30 AM and 1:30 PM, playdough mooncakes, lantern making, cultural activities, and the museum's hands-on exhibits.",
+      "sourceName": "Children's Discovery Museum of San Jose",
+      "sourceType": "official museum event page",
+      "confidence": "high",
+      "eventUrl": "https://www.cdm.org/celebrate/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Children%27s+Discovery+Museum+of+San+Jose",
+      "score": 90
+    },
+    {
       "title": "Mountain View Farmers' Market at Hope Street",
       "scoreBreakdown": {
         "distance": 10,
@@ -97,7 +179,7 @@
       "scoreBreakdown": {
         "distance": 10,
         "toddlerFit": 9,
-        "weatherFit": 9,
+        "weatherFit": 10,
         "cost": 10,
         "food": 7,
         "napFit": 10,
@@ -129,6 +211,43 @@
       "confidence": "high",
       "eventUrl": "https://www.mountainview.gov/Home/Components/Calendar/Event/3482/18?backlist=%2F",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Heritage+Park+771+N+Rengstorff+Ave+Mountain+View+CA",
+      "score": 89
+    },
+    {
+      "title": "Little Folkies Music Circle",
+      "scoreBreakdown": {
+        "distance": 10,
+        "toddlerFit": 10,
+        "weatherFit": 10,
+        "cost": 6,
+        "food": 6,
+        "napFit": 10,
+        "strollerLogistics": 9,
+        "parkingTransit": 8,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "morning",
+        "indoor"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "verify-branch"
+      ],
+      "label": "Best toddler music",
+      "time": "Sun, Sep 27, 10:00-10:45 AM",
+      "startDateTime": "2026-09-27T10:00:00-07:00",
+      "endDateTime": "2026-09-27T10:45:00-07:00",
+      "place": "Otto Family Club, Sunnyvale",
+      "cost": "Ticketed; check current price and availability",
+      "food": "Downtown Sunnyvale coffee and brunch nearby",
+      "why": "A 45-minute interactive acoustic folk concert designed specifically for ages 0-5, with singing, dancing, movement, and simple instrument play.",
+      "sourceName": "Little Folkies / Bandsintown",
+      "sourceType": "artist-backed ticket listing",
+      "confidence": "medium",
+      "eventUrl": "https://www.bandsintown.com/e/108744371-little-folkies-at-otto-family-club?came_from=252",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Otto+Family+Club+510+S+Mathilda+Ave+Sunnyvale+CA",
       "score": 88
     },
     {
@@ -171,47 +290,6 @@
       "eventUrl": "https://uvfm.org/santa-clara-saturdays",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santa+Clara+Farmers+Market+Jackson+Street+Homestead+Road",
       "score": 87
-    },
-    {
-      "title": "Reid-Hillview Airport Community Day",
-      "scoreBreakdown": {
-        "distance": 6,
-        "toddlerFit": 10,
-        "weatherFit": 9,
-        "cost": 10,
-        "food": 9,
-        "napFit": 8,
-        "strollerLogistics": 7,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "free",
-        "morning",
-        "festival",
-        "food",
-        "outdoor"
-      ],
-      "cautions": [
-        "crowded",
-        "loud",
-        "longer-drive"
-      ],
-      "label": "Best free spectacle",
-      "time": "Sat, Sep 26, 10:00 AM-3:00 PM",
-      "startDateTime": "2026-09-26T10:00:00-07:00",
-      "endDateTime": "2026-09-26T15:00:00-07:00",
-      "place": "Reid-Hillview Airport, San Jose",
-      "cost": "Free",
-      "food": "Food vendors onsite",
-      "why": "Historic aircraft, hands-on science and art, robots, live music, an RC airshow, flyovers, and a huge exhibitor field make this unusually strong for vehicle-loving toddlers.",
-      "sourceName": "Friends of Reid-Hillview Airport",
-      "sourceType": "official event page",
-      "confidence": "high",
-      "eventUrl": "https://www.friendsofrhv.org/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Reid-Hillview+Airport+2500+Cunningham+Ave+San+Jose+CA",
-      "score": 86
     },
     {
       "title": "West Valley Family Storytime",
@@ -288,43 +366,6 @@
       "score": 86
     },
     {
-      "title": "Little Folkies Music Circle",
-      "scoreBreakdown": {
-        "distance": 10,
-        "toddlerFit": 10,
-        "weatherFit": 10,
-        "cost": 5,
-        "food": 6,
-        "napFit": 10,
-        "strollerLogistics": 9,
-        "parkingTransit": 8,
-        "freshness": 9,
-        "worthDrive": 8
-      },
-      "tags": [
-        "morning",
-        "indoor"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "verify-branch"
-      ],
-      "label": "Best toddler music",
-      "time": "Sun, Sep 27, 10:00-10:45 AM",
-      "startDateTime": "2026-09-27T10:00:00-07:00",
-      "endDateTime": "2026-09-27T10:45:00-07:00",
-      "place": "Otto Family Club, Sunnyvale",
-      "cost": "Ticketed; check current price and availability",
-      "food": "Downtown Sunnyvale coffee and brunch nearby",
-      "why": "A 45-minute interactive acoustic folk concert designed specifically for ages 0-5, with singing, dancing, movement, and simple instrument play.",
-      "sourceName": "Little Folkies / Bandsintown",
-      "sourceType": "artist-backed ticket listing",
-      "confidence": "medium",
-      "eventUrl": "https://www.bandsintown.com/e/108744371-little-folkies-at-otto-family-club?came_from=252",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Otto+Family+Club+510+S+Mathilda+Ave+Sunnyvale+CA",
-      "score": 85
-    },
-    {
       "title": "Campbell Farmers Market",
       "scoreBreakdown": {
         "distance": 8,
@@ -364,47 +405,6 @@
       "eventUrl": "https://www.downtowncampbell.com/events/2026-09-27",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown+Campbell+Farmers+Market",
       "score": 85
-    },
-    {
-      "title": "Mid-Autumn Moon Festival at Children's Discovery Museum",
-      "scoreBreakdown": {
-        "distance": 7,
-        "toddlerFit": 10,
-        "weatherFit": 10,
-        "cost": 6,
-        "food": 8,
-        "napFit": 8,
-        "strollerLogistics": 9,
-        "parkingTransit": 6,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "morning",
-        "indoor",
-        "festival",
-        "food"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "crowded",
-        "parking-hard",
-        "loud"
-      ],
-      "label": "Best overall",
-      "time": "Sat, Sep 26, museum 9:30 AM-4:30 PM; special programming 11:00 AM-3:00 PM",
-      "startDateTime": "2026-09-26T09:30:00-07:00",
-      "endDateTime": "2026-09-26T16:30:00-07:00",
-      "place": "Children's Discovery Museum of San Jose",
-      "cost": "Included with museum admission; memberships and discounts may apply",
-      "food": "Museum food options and downtown San Jose restaurants nearby",
-      "why": "A near-perfect toddler outing with lion dances at 11:30 AM and 1:30 PM, playdough mooncakes, lantern making, cultural activities, and the museum's hands-on exhibits.",
-      "sourceName": "Children's Discovery Museum of San Jose",
-      "sourceType": "official museum event page",
-      "confidence": "high",
-      "eventUrl": "https://www.cdm.org/celebrate/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Children%27s+Discovery+Museum+of+San+Jose",
-      "score": 84
     },
     {
       "title": "Glen Fest",
