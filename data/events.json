@@ -637,7 +637,7 @@
         "loose-plan"
       ],
       "label": "Small museum + zoo",
-      "time": "Sat-Sun, Oct 3-4; reserve a timed entry",
+      "time": "Sat-Sun, Oct 3-4, 10:00 AM-5:00 PM; advance reservation required",
       "startDateTime": "2026-10-03T10:00:00-07:00",
       "endDateTime": "2026-10-04T17:00:00-07:00",
       "place": "Palo Alto Junior Museum & Zoo",
@@ -647,7 +647,7 @@
       "sourceName": "City of Palo Alto",
       "sourceType": "official museum page",
       "confidence": "high",
-      "eventUrl": "https://www.paloalto.gov/Departments/Community-Services/Arts-Sciences/Palo-Alto-Junior-Museum-Zoo",
+      "eventUrl": "https://www.paloaltozoo.org/Home",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palo+Alto+Junior+Museum+Zoo",
       "score": 76
     },
@@ -992,7 +992,7 @@
         "loose-plan"
       ],
       "label": "Worth-drive wildlife",
-      "time": "Sat-Sun, Oct 3-4; confirm current entry hours",
+      "time": "Sat-Sun, Oct 3-4, 10:00 AM-5:00 PM",
       "startDateTime": "2026-10-03T10:00:00-07:00",
       "endDateTime": "2026-10-04T17:00:00-07:00",
       "place": "CuriOdyssey, San Mateo",
@@ -1002,7 +1002,7 @@
       "sourceName": "CuriOdyssey",
       "sourceType": "official venue page",
       "confidence": "high",
-      "eventUrl": "https://curiodyssey.org/",
+      "eventUrl": "https://curiodyssey.org/visit/hours-admission/",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CuriOdyssey+1651+Coyote+Point+Drive+San+Mateo+CA",
       "score": 66
     }
