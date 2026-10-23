@@ -1,100 +1,19 @@
 {
-  "generated_at": "2026-10-16T13:49:27-07:00",
-  "weekend_label": "October 17-18",
-  "weather_summary": "The latest National Weather Service forecast calls for a warm, dry weekend in Sunnyvale: sunny near 85°F Saturday and near 75°F Sunday, with no meaningful rain signal. Favor morning starts, shade, sunscreen, and water for Saturday's outdoor festivals; Sunday should be more comfortable.",
+  "generated_at": "2026-10-23T10:03:48-07:00",
+  "weekend_label": "October 24-25",
+  "weather_summary": "The South Bay should be comfortable for outdoor plans after this week's rain: current forecasts cluster around partly sunny to sunny skies, afternoon highs near 68-75°F, cool mornings around 50°F, and little weekend rain. Bring a light morning layer; coastal and Sausalito choices will feel cooler, while parks may still have damp grass or paths.",
   "search_radius_label": "South Bay + select Bay Area",
-  "source_count": 22,
+  "source_count": 24,
   "max_events": 50,
   "anchor": "Sunnyvale",
   "audience": "0-5",
   "events": [
     {
-      "title": "Hands on the Arts Festival",
+      "title": "Monster Bash",
       "scoreBreakdown": {
         "distance": 10,
         "toddlerFit": 10,
-        "weatherFit": 8,
-        "cost": 10,
-        "food": 8,
-        "napFit": 9,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "free",
-        "morning",
-        "outdoor",
-        "festival"
-      ],
-      "cautions": [
-        "crowded",
-        "heat-risk"
-      ],
-      "label": "Best close-to-home pick",
-      "time": "Sat, Oct 17, 10:00 AM-3:00 PM",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-17T15:00:00-07:00",
-      "place": "Sunnyvale Community Center",
-      "cost": "Free",
-      "food": "Community Center area and El Camino restaurants nearby",
-      "why": "Sunnyvale's hands-on children's arts festival offers many short, flexible projects that fit toddler attention spans and an easy pre-nap visit.",
-      "sourceName": "City of Sunnyvale",
-      "sourceType": "official city calendar",
-      "confidence": "high",
-      "eventUrl": "https://www.sunnyvale.ca.gov/news-center-and-events-calendar/city-calendar/-curm-10/-cury-2026/-direct-true",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sunnyvale%20Community%20Center%20Sunnyvale%20CA",
-      "score": 96
-    },
-    {
-      "title": "Cupertino Diwali Festival",
-      "scoreBreakdown": {
-        "distance": 10,
-        "toddlerFit": 9,
-        "weatherFit": 8,
-        "cost": 10,
-        "food": 10,
-        "napFit": 8,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "free",
-        "outdoor",
-        "festival",
-        "food",
-        "tasting"
-      ],
-      "cautions": [
-        "crowded",
-        "parking-hard",
-        "loud",
-        "heat-risk"
-      ],
-      "label": "Best culture + food day",
-      "time": "Sat, Oct 17, 11:00 AM-6:00 PM",
-      "startDateTime": "2026-10-17T11:00:00-07:00",
-      "endDateTime": "2026-10-17T18:00:00-07:00",
-      "place": "Memorial Park, Cupertino",
-      "cost": "Free admission; food and purchases extra",
-      "food": "Indian food vendors and festival snacks on site",
-      "why": "A close, high-energy celebration with multicultural music and dance, a kids zone, workshops, crafts, and plenty of food.",
-      "sourceName": "City of Cupertino",
-      "sourceType": "official city event page",
-      "confidence": "high",
-      "eventUrl": "https://www.cupertino.gov/Parks-Recreation/Events/Festivals/Diwali-Festival",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cupertino%20Memorial%20Park%20Cupertino%20CA",
-      "score": 95
-    },
-    {
-      "title": "Day on the Bay",
-      "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 9,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 10,
         "food": 8,
         "napFit": 9,
@@ -112,146 +31,71 @@
       ],
       "cautions": [
         "crowded",
-        "heat-risk"
+        "parking-hard"
       ],
-      "label": "Best nature festival",
-      "time": "Sat, Oct 17, 10:00 AM-2:00 PM",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-17T14:00:00-07:00",
-      "place": "Alviso Marina County Park, San Jose",
+      "label": "Best all-around Halloween pick",
+      "time": "Sat, Oct 24, 10:00 AM-2:00 PM",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-24T14:00:00-07:00",
+      "place": "Rengstorff Park, Mountain View",
       "cost": "Free",
-      "food": "Family festival food options; Alviso restaurants nearby",
-      "why": "A free waterfront environmental and recreation festival with family activities, open space, and a clean morning-to-nap window.",
-      "sourceName": "Santa Clara Valley Open Space Authority",
-      "sourceType": "official agency event listing",
+      "food": "Food vendors on site; nearby Mountain View restaurants",
+      "why": "A close, free festival with a trick-or-treat maze, games, inflatables, performances, and a creepy-crawly zone, all in a toddler-friendly daytime window.",
+      "sourceName": "City of Mountain View",
+      "sourceType": "official city event page",
       "confidence": "high",
-      "eventUrl": "https://www.openspaceauthority.org/upcoming-events",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Alviso%20Marina%20County%20Park%20San%20Jose%20CA",
-      "score": 93
+      "eventUrl": "https://www.mountainview.gov/our-city/departments/community-services/special-events/monster-bash",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rengstorff%20Park%20Mountain%20View%20CA",
+      "score": 97
     },
     {
-      "title": "Almaden Fall Harvest and 20th Anniversary",
+      "title": "Harvest Festival at Cityline",
       "scoreBreakdown": {
-        "distance": 7,
+        "distance": 10,
         "toddlerFit": 10,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 10,
-        "food": 7,
+        "food": 10,
         "napFit": 8,
         "strollerLogistics": 8,
         "parkingTransit": 7,
         "freshness": 10,
-        "worthDrive": 9
+        "worthDrive": 10
       },
       "tags": [
         "free",
         "outdoor",
-        "festival"
+        "festival",
+        "food"
       ],
       "cautions": [
         "crowded",
-        "heat-risk"
+        "needs-ticket"
       ],
-      "label": "Best neighborhood harvest party",
-      "time": "Sat, Oct 17, 11:00 AM-4:00 PM",
-      "startDateTime": "2026-10-17T11:00:00-07:00",
-      "endDateTime": "2026-10-17T16:00:00-07:00",
-      "place": "Almaden Community Center and Library, San Jose",
-      "cost": "Free",
-      "food": "Bring snacks; Almaden Plaza food options are a short drive away",
-      "why": "A free harvest celebration with family activities and balloon creations in a community-center setting with indoor fallback.",
-      "sourceName": "City of San Jose",
-      "sourceType": "official city calendar",
+      "label": "Best close-to-home festival",
+      "time": "Sat, Oct 24, 11:00 AM-2:00 PM",
+      "startDateTime": "2026-10-24T11:00:00-07:00",
+      "endDateTime": "2026-10-24T14:00:00-07:00",
+      "place": "Cityline Redwood Square, Sunnyvale",
+      "cost": "Free with RSVP",
+      "food": "Downtown Sunnyvale restaurants, coffee, and treats steps away",
+      "why": "A pop-up pumpkin patch, carving, live music, family dance lessons, and a Día de los Muertos performance make this the easiest high-value outing.",
+      "sourceName": "Cityline Sunnyvale",
+      "sourceType": "primary Eventbrite listing",
       "confidence": "high",
-      "eventUrl": "https://www.sanjoseca.gov/Home/Components/Calendar/Event/8548/5117",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Almaden%20Community%20Center%20San%20Jose%20CA",
-      "score": 92
+      "eventUrl": "https://www.eventbrite.com/e/harvest-festival-at-cityline-tickets-2002588224287?aff=ebdssbcitybrowse",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cityline%20Redwood%20Square%20Sunnyvale%20CA",
+      "score": 96
     },
     {
-      "title": "Spooky Times at Deer Holloween Farm",
+      "title": "Community Day: Día de los Muertos",
       "scoreBreakdown": {
-        "distance": 9,
+        "distance": 8,
         "toddlerFit": 9,
-        "weatherFit": 8,
-        "cost": 9,
-        "food": 5,
-        "napFit": 9,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "morning",
-        "outdoor",
-        "festival"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "limited-food",
-        "heat-risk"
-      ],
-      "label": "Best toddler Halloween outing",
-      "time": "Sat, Oct 17, 10:00 AM-3:00 PM",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-17T15:00:00-07:00",
-      "place": "Deer Hollow Farm, Cupertino",
-      "cost": "Low-cost admission; verify current ticket details",
-      "food": "Pack water and snacks; limited food at the farm",
-      "why": "Farm animals, seasonal crafts, and gently spooky barns make this more toddler-scaled than a nighttime haunted attraction.",
-      "sourceName": "City of Mountain View",
-      "sourceType": "official city calendar",
-      "confidence": "medium",
-      "eventUrl": "https://www.mountainview.gov/Home/Components/Calendar/Event/3484/18?backlist=%2Fhome%2F-curm-10%2F-cury-2026",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Deer%20Hollow%20Farm%20Cupertino%20CA",
-      "score": 91
-    },
-    {
-      "title": "Mars Expedition with VEX Robotics + Museum Play",
-      "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 8,
-        "weatherFit": 10,
-        "cost": 6,
-        "food": 8,
-        "napFit": 9,
-        "strollerLogistics": 9,
-        "parkingTransit": 8,
-        "freshness": 10,
-        "worthDrive": 9
-      },
-      "tags": [
-        "morning",
-        "indoor"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "crowded"
-      ],
-      "label": "Best indoor science option",
-      "time": "Sat, Oct 17, 10:30 AM-noon; museum open 9:30 AM-4:30 PM",
-      "startDateTime": "2026-10-17T10:30:00-07:00",
-      "endDateTime": "2026-10-17T12:00:00-07:00",
-      "place": "Children's Discovery Museum of San Jose",
-      "cost": "Workshop registration includes museum admission; verify availability",
-      "food": "Museum cafe area and family-friendly downtown restaurants nearby",
-      "why": "The workshop suits older siblings while toddlers can use the museum's play spaces; the indoor setup is flexible if Saturday feels hot.",
-      "sourceName": "Children's Discovery Museum of San Jose",
-      "sourceType": "official museum event page",
-      "confidence": "high",
-      "eventUrl": "https://www.cdm.org/event/mars-expedition-with-vex-robotics/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Children's%20Discovery%20Museum%20San%20Jose%20CA",
-      "score": 90
-    },
-    {
-      "title": "Fall Family Day",
-      "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 10,
         "weatherFit": 10,
         "cost": 10,
-        "food": 7,
-        "napFit": 6,
+        "food": 9,
+        "napFit": 8,
         "strollerLogistics": 8,
         "parkingTransit": 7,
         "freshness": 10,
@@ -259,82 +103,200 @@
       },
       "tags": [
         "free",
-        "indoor"
-      ],
-      "cautions": [
-        "crowded"
-      ],
-      "label": "Best Sunday art activity",
-      "time": "Sun, Oct 18, 2:00-4:15 PM",
-      "startDateTime": "2026-10-18T14:00:00-07:00",
-      "endDateTime": "2026-10-18T16:15:00-07:00",
-      "place": "Palo Alto Art Center",
-      "cost": "Free",
-      "food": "California Avenue and Midtown Palo Alto options nearby",
-      "why": "Free drop-in printmaking, collage, and dot-art stations give toddlers several low-pressure ways to make art after nap.",
-      "sourceName": "City of Palo Alto",
-      "sourceType": "official city event page",
-      "confidence": "high",
-      "eventUrl": "https://www.paloalto.gov/Events-Directory/Community-Services/2026-Fall-Family-Day",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palo%20Alto%20Art%20Center%20Palo%20Alto%20CA",
-      "score": 89
-    },
-    {
-      "title": "Campbell Oktoberfest + Kinderplatz",
-      "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 8,
-        "weatherFit": 8,
-        "cost": 10,
-        "food": 10,
-        "napFit": 7,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 9
-      },
-      "tags": [
-        "free",
         "morning",
+        "indoor",
         "outdoor",
         "festival",
-        "market",
-        "food",
-        "tasting"
+        "food"
       ],
       "cautions": [
         "crowded",
         "parking-hard",
-        "loud",
-        "heat-risk"
+        "loud"
       ],
-      "label": "Best festival grazing",
-      "time": "Sat, Oct 17, 10:00 AM-6:00 PM; Sun, Oct 18, 10:00 AM-5:00 PM",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
-      "place": "Downtown Campbell",
-      "cost": "Free admission; rides, food, and purchases extra",
-      "food": "German specialties plus downtown restaurants and snacks",
-      "why": "Kinderplatz, artisan booths, live music, and lots of food make a flexible festival stop; arrive early for easier stroller movement.",
-      "sourceName": "Campbell Oktoberfest",
-      "sourceType": "official event page",
+      "label": "Best arts + culture day",
+      "time": "Sat, Oct 24, 11:00 AM-4:00 PM",
+      "startDateTime": "2026-10-24T11:00:00-07:00",
+      "endDateTime": "2026-10-24T16:00:00-07:00",
+      "place": "San José Museum of Art",
+      "cost": "Free museum admission and activities",
+      "food": "Downtown San Jose restaurants and Plaza food options nearby",
+      "why": "Free artmaking, cultural demonstrations, performances, and museum access provide a rich multigenerational day with indoor space.",
+      "sourceName": "San José Museum of Art",
+      "sourceType": "official museum event page",
       "confidence": "high",
-      "eventUrl": "https://campbelloktoberfest.com/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown%20Campbell%20CA",
-      "score": 88
+      "eventUrl": "https://sjmusart.org/programs-at-sjma/community-days/dia-de-los-muertos",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=San%20Jose%20Museum%20of%20Art%20San%20Jose%20CA",
+      "score": 95
+    },
+    {
+      "title": "Fall Family Festival",
+      "scoreBreakdown": {
+        "distance": 7,
+        "toddlerFit": 10,
+        "weatherFit": 9,
+        "cost": 10,
+        "food": 7,
+        "napFit": 9,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 10
+      },
+      "tags": [
+        "free",
+        "morning",
+        "outdoor",
+        "festival"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard"
+      ],
+      "label": "Best free pumpkin + trick-or-treat day",
+      "time": "Sat, Oct 24, 10:00 AM-2:00 PM",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-24T14:00:00-07:00",
+      "place": "Lake Cunningham Park, San Jose",
+      "cost": "Free; park parking may cost extra",
+      "food": "Bring snacks; limited festival and nearby East San Jose options",
+      "why": "Trick-or-treating, a pumpkin patch, children's activities, and a community fair deliver a full fall outing without admission cost.",
+      "sourceName": "San José Clean Energy",
+      "sourceType": "official city department event page",
+      "confidence": "high",
+      "eventUrl": "https://sanjosecleanenergy.org/event/fall-family-festival/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Cunningham%20Park%20San%20Jose%20CA",
+      "score": 94
+    },
+    {
+      "title": "Children's SpooktaClara Halloween Party",
+      "scoreBreakdown": {
+        "distance": 9,
+        "toddlerFit": 10,
+        "weatherFit": 9,
+        "cost": 10,
+        "food": 8,
+        "napFit": 7,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 10
+      },
+      "tags": [
+        "free",
+        "outdoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard"
+      ],
+      "label": "Best central Santa Clara party",
+      "time": "Sat, Oct 24, noon-4:00 PM",
+      "startDateTime": "2026-10-24T12:00:00-07:00",
+      "endDateTime": "2026-10-24T16:00:00-07:00",
+      "place": "Central Park, Santa Clara",
+      "cost": "Free",
+      "food": "Festival concessions and nearby Santa Clara restaurants",
+      "why": "A long-running city Halloween party in a familiar park setting gives families room to arrive after lunch or nap.",
+      "sourceName": "City of Santa Clara",
+      "sourceType": "official city event page",
+      "confidence": "high",
+      "eventUrl": "https://www.santaclaraca.gov/Home/Components/Calendar/Event/111000/41?curm=10&cury=2026&recordid=17374",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santa%20Clara%20Central%20Park%20909%20Kiely%20Blvd%20Santa%20Clara%20CA",
+      "score": 93
+    },
+    {
+      "title": "Farmer Mike Giant Pumpkin Carving",
+      "scoreBreakdown": {
+        "distance": 9,
+        "toddlerFit": 9,
+        "weatherFit": 9,
+        "cost": 10,
+        "food": 10,
+        "napFit": 9,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "free",
+        "morning",
+        "outdoor",
+        "food"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard"
+      ],
+      "label": "Best food-paired pumpkin stop",
+      "time": "Sat, Oct 24, 10:00 AM-1:00 PM; Sun, Oct 25, noon-2:00 PM",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T14:00:00-07:00",
+      "place": "Park Valencia at Santana Row, San Jose",
+      "cost": "Free to watch; food and shopping extra",
+      "food": "Many family-friendly restaurants, bakeries, and coffee stops at Santana Row",
+      "why": "Watch a giant pumpkin become a sculpture, then add lunch or a short stroll; the two-day schedule makes this easy to fit around naps.",
+      "sourceName": "Santana Row",
+      "sourceType": "official venue event page",
+      "confidence": "high",
+      "eventUrl": "https://santanarow.com/event/farmer-mike-pumpkin-carving/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Park%20Valencia%20Santana%20Row%20San%20Jose%20CA",
+      "score": 92
+    },
+    {
+      "title": "Cupertino Monster Mash",
+      "scoreBreakdown": {
+        "distance": 10,
+        "toddlerFit": 9,
+        "weatherFit": 10,
+        "cost": 7,
+        "food": 7,
+        "napFit": 8,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "indoor",
+        "festival"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "crowded",
+        "loud",
+        "late"
+      ],
+      "label": "Best early-evening Halloween party",
+      "time": "Sat, Oct 24, 5:00-8:00 PM",
+      "startDateTime": "2026-10-24T17:00:00-07:00",
+      "endDateTime": "2026-10-24T20:00:00-07:00",
+      "place": "Quinlan Community Center, Cupertino",
+      "cost": "Ticket or registration may be required",
+      "food": "Cupertino restaurants nearby; verify concessions",
+      "why": "Games, trick-or-treating, spooky crafts, and pumpkin decorating offer a weather-proof option for toddlers who can handle an evening event.",
+      "sourceName": "City of Cupertino",
+      "sourceType": "official city event page",
+      "confidence": "high",
+      "eventUrl": "https://www.cupertino.gov/Parks-Recreation/Events/Monster-Mash/Monster-Mash-Event",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quinlan%20Community%20Center%20Cupertino%20CA",
+      "score": 90
     },
     {
       "title": "Environmental Education Center Open House",
       "scoreBreakdown": {
-        "distance": 9,
+        "distance": 10,
         "toddlerFit": 9,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 10,
         "food": 5,
         "napFit": 8,
         "strollerLogistics": 8,
         "parkingTransit": 7,
-        "freshness": 10,
+        "freshness": 9,
         "worthDrive": 9
       },
       "tags": [
@@ -342,33 +304,71 @@
         "outdoor"
       ],
       "cautions": [
-        "limited-food",
-        "heat-risk"
+        "limited-food"
       ],
-      "label": "Best quiet nature backup",
-      "time": "Sat, Oct 17, 11:00 AM-3:00 PM",
-      "startDateTime": "2026-10-17T11:00:00-07:00",
-      "endDateTime": "2026-10-17T15:00:00-07:00",
+      "label": "Best quiet nature alternative",
+      "time": "Sat, Oct 24, 11:00 AM-3:00 PM",
+      "startDateTime": "2026-10-24T11:00:00-07:00",
+      "endDateTime": "2026-10-24T15:00:00-07:00",
       "place": "McClellan Ranch Preserve, Cupertino",
       "cost": "Free",
       "food": "Pack snacks; Cupertino restaurants are a short drive away",
-      "why": "Meet animal ambassadors, talk with preserve staff, and try hands-on ecology activities in a lower-key setting.",
+      "why": "Animal ambassadors and hands-on ecology activities give families a calm, flexible alternative to crowded Halloween festivals.",
       "sourceName": "City of Cupertino",
       "sourceType": "official city event page",
       "confidence": "high",
       "eventUrl": "https://www.cupertino.gov/Parks-Recreation/Events/McClellan-Events/Environmental-Education-Center-Open-House",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=McClellan%20Ranch%20Preserve%20Cupertino%20CA",
-      "score": 87
+      "score": 89
+    },
+    {
+      "title": "Children's Halloween Haunt at History Park",
+      "scoreBreakdown": {
+        "distance": 8,
+        "toddlerFit": 9,
+        "weatherFit": 9,
+        "cost": 7,
+        "food": 7,
+        "napFit": 6,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "outdoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "crowded",
+        "needs-ticket",
+        "loud"
+      ],
+      "label": "Best historic Halloween walk",
+      "time": "Sat, Oct 24, 2:00-6:30 PM",
+      "startDateTime": "2026-10-24T14:00:00-07:00",
+      "endDateTime": "2026-10-24T18:30:00-07:00",
+      "place": "History Park, San Jose",
+      "cost": "Admission may apply; verify current ticket details",
+      "food": "Festival concessions and nearby San Jose options",
+      "why": "History Park becomes a family-scaled Halloween village with activities and a 6:00 PM light show; arrive early for the gentlest experience.",
+      "sourceName": "Chinese Historical & Cultural Project",
+      "sourceType": "official partner event page",
+      "confidence": "medium",
+      "eventUrl": "https://www.chcp.org/event-6856658",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=History%20Park%20635%20Phelan%20Ave%20San%20Jose%20CA",
+      "score": 88
     },
     {
       "title": "Sunnyvale Farmers' Market + Family Storytime",
       "scoreBreakdown": {
         "distance": 10,
-        "toddlerFit": 9,
-        "weatherFit": 8,
+        "toddlerFit": 10,
+        "weatherFit": 9,
         "cost": 10,
         "food": 10,
-        "napFit": 9,
+        "napFit": 10,
         "strollerLogistics": 8,
         "parkingTransit": 7,
         "freshness": 9,
@@ -377,33 +377,33 @@
       "tags": [
         "free",
         "morning",
+        "outdoor",
+        "indoor",
         "market",
         "food",
-        "tasting",
-        "outdoor",
-        "indoor"
+        "tasting"
       ],
       "cautions": [
         "crowded",
         "parking-hard"
       ],
-      "label": "Easiest Saturday combo",
-      "time": "Sat, Oct 17, market 9:00 AM-1:00 PM; storytime 11:00 AM",
-      "startDateTime": "2026-10-17T09:00:00-07:00",
-      "endDateTime": "2026-10-17T13:00:00-07:00",
+      "label": "Easiest breakfast + books plan",
+      "time": "Sat, Oct 24, market 9:00 AM-1:00 PM; storytime 11:00 AM",
+      "startDateTime": "2026-10-24T09:00:00-07:00",
+      "endDateTime": "2026-10-24T13:00:00-07:00",
       "place": "Downtown Sunnyvale and Sunnyvale Public Library",
       "cost": "Free; market purchases optional",
-      "food": "Market produce, pastries, coffee, prepared food, and Murphy Avenue restaurants",
-      "why": "Pair breakfast grazing with a free indoor storytime, then head home before nap or continue to Hands on the Arts.",
+      "food": "Produce, pastries, coffee, prepared food, and Murphy Avenue restaurants",
+      "why": "Start with market snacks, walk to a free toddler-ready storytime, and still be home before nap.",
       "sourceName": "City of Sunnyvale",
       "sourceType": "official city calendar",
       "confidence": "high",
       "eventUrl": "https://www.sunnyvale.ca.gov/news-center-and-events-calendar/city-calendar/-curm-10/-cury-2026/-direct-true",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Downtown%20Sunnyvale%20Murphy%20Avenue%20Sunnyvale%20CA",
-      "score": 86
+      "score": 87
     },
     {
-      "title": "Jahri's World Performance for Children and Families",
+      "title": "Family Storytime at Cupertino Library",
       "scoreBreakdown": {
         "distance": 10,
         "toddlerFit": 10,
@@ -413,8 +413,8 @@
         "napFit": 10,
         "strollerLogistics": 8,
         "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 8
+        "freshness": 9,
+        "worthDrive": 7
       },
       "tags": [
         "free",
@@ -424,107 +424,23 @@
       "cautions": [
         "crowded"
       ],
-      "label": "Best short morning show",
-      "time": "Sat, Oct 17, 10:30 AM",
-      "startDateTime": "2026-10-17T10:30:00-07:00",
-      "endDateTime": "2026-10-17T11:15:00-07:00",
+      "label": "Best short pre-lunch activity",
+      "time": "Sat, Oct 24, 10:30-11:00 AM",
+      "startDateTime": "2026-10-24T10:30:00-07:00",
+      "endDateTime": "2026-10-24T11:00:00-07:00",
       "place": "Cupertino Library",
       "cost": "Free",
       "food": "Main Street Cupertino and De Anza dining nearby",
-      "why": "A short free performance is easy to pair with lunch and leave before nap, with library amenities close at hand.",
+      "why": "A compact half-hour of stories and songs works cleanly before lunch, nap, or the nearby nature open house.",
       "sourceName": "Santa Clara County Library District",
       "sourceType": "official library calendar",
       "confidence": "high",
-      "eventUrl": "https://sccl.bibliocommons.com/v2/events?locations=CU",
+      "eventUrl": "https://sccl.bibliocommons.com/v2/events?series=6a08de15f6bd012f0068676c",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cupertino%20Library%20Cupertino%20CA",
-      "score": 85
+      "score": 86
     },
     {
-      "title": "Half Moon Bay Art & Pumpkin Festival",
-      "scoreBreakdown": {
-        "distance": 4,
-        "toddlerFit": 9,
-        "weatherFit": 8,
-        "cost": 10,
-        "food": 10,
-        "napFit": 5,
-        "strollerLogistics": 5,
-        "parkingTransit": 4,
-        "freshness": 10,
-        "worthDrive": 10
-      },
-      "tags": [
-        "free",
-        "morning",
-        "outdoor",
-        "festival",
-        "market",
-        "food",
-        "tasting"
-      ],
-      "cautions": [
-        "crowded",
-        "parking-hard",
-        "longer-drive"
-      ],
-      "label": "Biggest worth-the-drive festival",
-      "time": "Sat-Sun, Oct 17-18, 9:00 AM-5:00 PM",
-      "startDateTime": "2026-10-17T09:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
-      "place": "Historic Main Street, Half Moon Bay",
-      "cost": "Free admission; food and purchases extra",
-      "food": "Pumpkin treats, festival food, and Main Street restaurants",
-      "why": "The giant pumpkin display, family fun zone, pie-eating events, art, and food make this the standout longer-drive option.",
-      "sourceName": "Half Moon Bay Art & Pumpkin Festival",
-      "sourceType": "official event page",
-      "confidence": "high",
-      "eventUrl": "https://www.hmbpumpkinfest.com/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Main%20Street%20Half%20Moon%20Bay%20CA",
-      "score": 84
-    },
-    {
-      "title": "Bay Area Prabasi Durga Puja",
-      "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 7,
-        "weatherFit": 9,
-        "cost": 6,
-        "food": 10,
-        "napFit": 6,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 10,
-        "worthDrive": 9
-      },
-      "tags": [
-        "indoor",
-        "festival",
-        "food",
-        "tasting"
-      ],
-      "cautions": [
-        "crowded",
-        "parking-hard",
-        "loud",
-        "needs-ticket"
-      ],
-      "label": "Best Bengali culture + dining",
-      "time": "Sat, Oct 17; see organizer schedule",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-17T22:00:00-07:00",
-      "place": "Santa Clara County Fairgrounds, San Jose",
-      "cost": "Registration or tickets may be required",
-      "food": "Bengali festival dining is a central part of the program",
-      "why": "A full cultural celebration with rituals, performances, and Bengali food; choose an earlier session for younger children.",
-      "sourceName": "Bay Area Prabasi",
-      "sourceType": "official organizer page",
-      "confidence": "medium",
-      "eventUrl": "https://www.prabasi.org/bay-area-prabasi-durga-puja-2026",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Santa%20Clara%20County%20Fairgrounds%20San%20Jose%20CA",
-      "score": 83
-    },
-    {
-      "title": "Milpitas Library Family Storytime",
+      "title": "Family Storytime at Milpitas Library",
       "scoreBreakdown": {
         "distance": 8,
         "toddlerFit": 10,
@@ -545,33 +461,188 @@
       "cautions": [
         "crowded"
       ],
-      "label": "Best simple storytime",
-      "time": "Sat, Oct 17, 11:00-11:30 AM",
-      "startDateTime": "2026-10-17T11:00:00-07:00",
-      "endDateTime": "2026-10-17T11:30:00-07:00",
+      "label": "Best northeast South Bay storytime",
+      "time": "Sat, Oct 24, 11:00-11:30 AM",
+      "startDateTime": "2026-10-24T11:00:00-07:00",
+      "endDateTime": "2026-10-24T11:30:00-07:00",
       "place": "Milpitas Library",
       "cost": "Free",
       "food": "Milpitas Town Center restaurants nearby",
-      "why": "A compact half-hour of stories and songs fits neatly before lunch and nap without turning the day into a production.",
+      "why": "A free thirty-minute storytime is an easy, low-stimulation choice for younger toddlers.",
       "sourceName": "Santa Clara County Library District",
       "sourceType": "official library calendar",
       "confidence": "high",
       "eventUrl": "https://sccl.bibliocommons.com/v2/events?audiences=5b28181c4727c7344c796675%2C5b2a5dcb2c1d736b168c62ac%2C5b28181c4727c7344c796679%2C5b28181c4727c7344c796678%2C5b28181c4727c7344c796677%2C5b28181c4727c7344c796676&programs=5d4c5a395e6da73a0046aebf",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milpitas%20Library%20Milpitas%20CA",
+      "score": 85
+    },
+    {
+      "title": "Family Storytime + Stay and Play",
+      "scoreBreakdown": {
+        "distance": 7,
+        "toddlerFit": 10,
+        "weatherFit": 10,
+        "cost": 10,
+        "food": 7,
+        "napFit": 10,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 9,
+        "worthDrive": 8
+      },
+      "tags": [
+        "free",
+        "morning",
+        "indoor"
+      ],
+      "cautions": [],
+      "label": "Best story-and-play hour",
+      "time": "Sat, Oct 24, 10:30-11:30 AM",
+      "startDateTime": "2026-10-24T10:30:00-07:00",
+      "endDateTime": "2026-10-24T11:30:00-07:00",
+      "place": "East San Jose Carnegie Branch Library",
+      "cost": "Free",
+      "food": "Story Road and East San Jose options nearby",
+      "why": "Songs, rhymes, fingerplays, movement, and open play provide more toddler value than a storytime alone.",
+      "sourceName": "San José Public Library",
+      "sourceType": "official library event page",
+      "confidence": "high",
+      "eventUrl": "https://sjpl.bibliocommons.com/v2/events/6a945bd936204e08fbb85191",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=East%20San%20Jose%20Carnegie%20Branch%20Library%20San%20Jose%20CA",
+      "score": 84
+    },
+    {
+      "title": "Goblin Jamboree",
+      "scoreBreakdown": {
+        "distance": 3,
+        "toddlerFit": 10,
+        "weatherFit": 9,
+        "cost": 4,
+        "food": 7,
+        "napFit": 4,
+        "strollerLogistics": 8,
+        "parkingTransit": 4,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "morning",
+        "indoor",
+        "outdoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "crowded",
+        "parking-hard",
+        "longer-drive"
+      ],
+      "label": "Best toddler-first destination event",
+      "time": "Sat-Sun, Oct 24-25; timed sessions",
+      "startDateTime": "2026-10-24T09:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
+      "place": "Bay Area Discovery Museum, Sausalito",
+      "cost": "Ticketed; advance reservations recommended",
+      "food": "Museum cafe and Sausalito dining",
+      "why": "A toddler-sized harvest play area, playful Halloween activities, and museum exhibits are exceptionally age-appropriate, though the drive and tickets are substantial.",
+      "sourceName": "Bay Area Discovery Museum",
+      "sourceType": "official museum event page",
+      "confidence": "high",
+      "eventUrl": "https://bayareadiscoverymuseum.org/events/goblin-jamboree/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bay%20Area%20Discovery%20Museum%20Sausalito%20CA",
+      "score": 83
+    },
+    {
+      "title": "Family Halloween Day",
+      "scoreBreakdown": {
+        "distance": 3,
+        "toddlerFit": 9,
+        "weatherFit": 9,
+        "cost": 8,
+        "food": 6,
+        "napFit": 8,
+        "strollerLogistics": 8,
+        "parkingTransit": 4,
+        "freshness": 10,
+        "worthDrive": 8
+      },
+      "tags": [
+        "morning",
+        "indoor",
+        "outdoor",
+        "festival"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard",
+        "longer-drive"
+      ],
+      "label": "Best San Francisco museum festival",
+      "time": "Sat, Oct 24, 10:00 AM-2:00 PM",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-24T14:00:00-07:00",
+      "place": "Randall Museum, San Francisco",
+      "cost": "Check event admission details",
+      "food": "Pack snacks; Castro and Cole Valley options nearby",
+      "why": "Live animals, science and art exhibits, a toddler playroom, and Halloween programming make this a strong longer-drive indoor/outdoor option.",
+      "sourceName": "Randall Museum",
+      "sourceType": "official museum event listing",
+      "confidence": "medium",
+      "eventUrl": "https://randallmuseum.org/event-type/event-annual/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Randall%20Museum%20San%20Francisco%20CA",
       "score": 82
+    },
+    {
+      "title": "Symphonic Spooktacular",
+      "scoreBreakdown": {
+        "distance": 8,
+        "toddlerFit": 6,
+        "weatherFit": 10,
+        "cost": 4,
+        "food": 8,
+        "napFit": 6,
+        "strollerLogistics": 8,
+        "parkingTransit": 5,
+        "freshness": 10,
+        "worthDrive": 9
+      },
+      "tags": [
+        "indoor"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "parking-hard",
+        "loud",
+        "late"
+      ],
+      "label": "Best family performance",
+      "time": "Sat, Oct 24, 7:30 PM; Sun, Oct 25, 2:30 PM",
+      "startDateTime": "2026-10-24T19:30:00-07:00",
+      "endDateTime": "2026-10-25T16:30:00-07:00",
+      "place": "California Theatre, San Jose",
+      "cost": "Ticketed; listed prices start around $35",
+      "food": "Downtown San Jose restaurants nearby",
+      "why": "A theatrical Halloween concert is memorable for music-loving families; Sunday's matinee is the more toddler-compatible performance.",
+      "sourceName": "Symphony San Jose",
+      "sourceType": "official performance page",
+      "confidence": "high",
+      "eventUrl": "https://www.symphonysanjose.org/attend/2026-2027-season/concerts/symphonic-spooktacular/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=California%20Theatre%20San%20Jose%20CA",
+      "score": 81
     },
     {
       "title": "Lemos Farm Pumpkin Patch",
       "scoreBreakdown": {
         "distance": 4,
         "toddlerFit": 10,
-        "weatherFit": 8,
-        "cost": 6,
+        "weatherFit": 9,
+        "cost": 5,
         "food": 8,
         "napFit": 6,
         "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 8,
+        "parkingTransit": 5,
+        "freshness": 9,
         "worthDrive": 9
       },
       "tags": [
@@ -587,26 +658,26 @@
         "longer-drive"
       ],
       "label": "Best classic toddler pumpkin day",
-      "time": "Sat-Sun, Oct 17-18; timed tickets recommended",
-      "startDateTime": "2026-10-17T09:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
+      "time": "Sat-Sun, Oct 24-25; timed tickets recommended",
+      "startDateTime": "2026-10-24T09:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
       "place": "Lemos Farm, Half Moon Bay",
-      "cost": "Ticketed; attractions vary by package",
+      "cost": "Ticketed; attraction packages vary",
       "food": "Farm snacks and Half Moon Bay dining nearby",
-      "why": "Pony rides, train rides, animals, pumpkins, and toddler-scaled attractions justify the drive if you want a full farm day.",
+      "why": "Pony rides, a train, animals, pumpkins, and compact toddler-scaled attractions make this a strong destination day.",
       "sourceName": "Lemos Farm",
       "sourceType": "official venue page",
       "confidence": "high",
       "eventUrl": "https://www.lemosfarm.com/pumpkin-patch",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lemos%20Farm%20Half%20Moon%20Bay%20CA",
-      "score": 81
+      "score": 80
     },
     {
       "title": "Mountain View Farmers' Market",
       "scoreBreakdown": {
         "distance": 10,
         "toddlerFit": 8,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 10,
         "food": 10,
         "napFit": 10,
@@ -628,10 +699,10 @@
         "parking-hard"
       ],
       "label": "Best Sunday breakfast stroll",
-      "time": "Sun, Oct 18, 9:00 AM-1:00 PM",
-      "startDateTime": "2026-10-18T09:00:00-07:00",
-      "endDateTime": "2026-10-18T13:00:00-07:00",
-      "place": "Mountain View Caltrain Station",
+      "time": "Sun, Oct 25, 9:00 AM-1:00 PM",
+      "startDateTime": "2026-10-25T09:00:00-07:00",
+      "endDateTime": "2026-10-25T13:00:00-07:00",
+      "place": "Mountain View Caltrain Station area",
       "cost": "Free entry; purchases optional",
       "food": "Produce, bakery items, prepared foods, coffee, and Castro Street restaurants",
       "why": "A close, stroller-friendly Sunday morning with easy grazing and a clean exit before nap.",
@@ -639,15 +710,96 @@
       "sourceType": "official market page",
       "confidence": "high",
       "eventUrl": "https://www.cafarmersmkts.com/mountain-view-farmers-market/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mountain%20View%20Caltrain%20Station%20CA",
-      "score": 80
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mountain%20View%20Farmers%20Market%20CA",
+      "score": 79
+    },
+    {
+      "title": "Spina Farms Pumpkin Patch",
+      "scoreBreakdown": {
+        "distance": 5,
+        "toddlerFit": 9,
+        "weatherFit": 9,
+        "cost": 5,
+        "food": 8,
+        "napFit": 7,
+        "strollerLogistics": 8,
+        "parkingTransit": 5,
+        "freshness": 9,
+        "worthDrive": 8
+      },
+      "tags": [
+        "morning",
+        "outdoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard",
+        "needs-ticket",
+        "longer-drive"
+      ],
+      "label": "Best South County pumpkin patch",
+      "time": "Sat-Sun, Oct 24-25; check daily schedule",
+      "startDateTime": "2026-10-24T08:30:00-07:00",
+      "endDateTime": "2026-10-25T21:00:00-07:00",
+      "place": "Spina Farms Pumpkin Patch, Morgan Hill",
+      "cost": "Admission and attraction tickets vary",
+      "food": "Seasonal farm food and treats on site",
+      "why": "A large pumpkin patch with rides, photo stops, and food; arrive early for lighter crowds and easier nap timing.",
+      "sourceName": "Spina Farms Pumpkin Patch",
+      "sourceType": "official venue page",
+      "confidence": "medium",
+      "eventUrl": "https://spinafarmspumpkinpatch.com/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spina%20Farms%20Pumpkin%20Patch%20Morgan%20Hill%20CA",
+      "score": 78
+    },
+    {
+      "title": "Swank Farms Fall Experience",
+      "scoreBreakdown": {
+        "distance": 3,
+        "toddlerFit": 8,
+        "weatherFit": 9,
+        "cost": 5,
+        "food": 8,
+        "napFit": 5,
+        "strollerLogistics": 8,
+        "parkingTransit": 6,
+        "freshness": 9,
+        "worthDrive": 8
+      },
+      "tags": [
+        "morning",
+        "outdoor",
+        "festival",
+        "food"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "longer-drive",
+        "late"
+      ],
+      "label": "Best full farm destination",
+      "time": "Sat-Sun, Oct 24-25, 10:00 AM-10:00 PM",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T22:00:00-07:00",
+      "place": "Swank Farms, Hollister",
+      "cost": "Ticketed; attraction packages vary",
+      "food": "Farm food, vendors, and seasonal treats on site",
+      "why": "A pumpkin patch, corn maze, rides, vendors, and live entertainment create a full-day fall experience; use daytime hours with toddlers.",
+      "sourceName": "Swank Farms",
+      "sourceType": "official venue page",
+      "confidence": "high",
+      "eventUrl": "https://www.swankfarms.com/fall-experience",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Swank%20Farms%20Hollister%20CA",
+      "score": 77
     },
     {
       "title": "California Avenue Farmers' Market",
       "scoreBreakdown": {
         "distance": 8,
         "toddlerFit": 8,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 10,
         "food": 10,
         "napFit": 10,
@@ -669,140 +821,18 @@
         "parking-hard"
       ],
       "label": "Best Palo Alto market morning",
-      "time": "Sun, Oct 18, 9:00 AM-1:00 PM",
-      "startDateTime": "2026-10-18T09:00:00-07:00",
-      "endDateTime": "2026-10-18T13:00:00-07:00",
+      "time": "Sun, Oct 25, 9:00 AM-1:00 PM",
+      "startDateTime": "2026-10-25T09:00:00-07:00",
+      "endDateTime": "2026-10-25T13:00:00-07:00",
       "place": "California Avenue, Palo Alto",
       "cost": "Free entry; purchases optional",
       "food": "Farm stands, bakery items, prepared food, and California Avenue restaurants",
-      "why": "A relaxed breakfast-and-produce outing that pairs well with a playground or the afternoon Fall Family Day.",
+      "why": "A relaxed breakfast-and-produce outing that is easy to pair with a playground or museum visit.",
       "sourceName": "Urban Village Farmers' Market Association",
       "sourceType": "official market page",
       "confidence": "high",
       "eventUrl": "https://uvfm.org/palo-alto-sundays",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=California%20Avenue%20Farmers%20Market%20Palo%20Alto%20CA",
-      "score": 79
-    },
-    {
-      "title": "Spina Farms Pumpkin Patch",
-      "scoreBreakdown": {
-        "distance": 6,
-        "toddlerFit": 9,
-        "weatherFit": 8,
-        "cost": 6,
-        "food": 8,
-        "napFit": 7,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 8,
-        "worthDrive": 8
-      },
-      "tags": [
-        "morning",
-        "outdoor",
-        "festival",
-        "food"
-      ],
-      "cautions": [
-        "crowded",
-        "parking-hard",
-        "needs-ticket",
-        "heat-risk"
-      ],
-      "label": "Best South County pumpkin patch",
-      "time": "Sat-Sun, Oct 17-18; Saturday listed 8:30 AM-10:00 PM",
-      "startDateTime": "2026-10-17T08:30:00-07:00",
-      "endDateTime": "2026-10-18T21:00:00-07:00",
-      "place": "Spina Farms Pumpkin Patch, Morgan Hill",
-      "cost": "Admission and attraction tickets vary",
-      "food": "Seasonal farm food and treats on site",
-      "why": "A large pumpkin patch with rides, photo stops, and food; an early arrival improves heat, crowds, and nap timing.",
-      "sourceName": "Spina Farms Pumpkin Patch",
-      "sourceType": "official venue calendar",
-      "confidence": "high",
-      "eventUrl": "https://spinafarmspumpkinpatch.com/calendar/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spina%20Farms%20Pumpkin%20Patch%20Morgan%20Hill%20CA",
-      "score": 78
-    },
-    {
-      "title": "Swank Farms Fall Experience",
-      "scoreBreakdown": {
-        "distance": 4,
-        "toddlerFit": 8,
-        "weatherFit": 8,
-        "cost": 6,
-        "food": 8,
-        "napFit": 5,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 8,
-        "worthDrive": 8
-      },
-      "tags": [
-        "morning",
-        "outdoor",
-        "festival",
-        "food"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "longer-drive",
-        "heat-risk"
-      ],
-      "label": "Best longer farm adventure",
-      "time": "Sat-Sun, Oct 17-18, 10:00 AM-10:00 PM",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T22:00:00-07:00",
-      "place": "Swank Farms, Hollister",
-      "cost": "Ticketed; attraction packages vary",
-      "food": "Farm food and seasonal treats on site",
-      "why": "Pumpkins, mazes, and fall attractions offer a full outing; the distance makes it best for families wanting a destination day.",
-      "sourceName": "Swank Farms",
-      "sourceType": "official venue page",
-      "confidence": "high",
-      "eventUrl": "https://www.swankfarms.com/fall-experience",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Swank%20Farms%20Hollister%20CA",
-      "score": 77
-    },
-    {
-      "title": "California's Great America Bonus Weekend",
-      "scoreBreakdown": {
-        "distance": 10,
-        "toddlerFit": 7,
-        "weatherFit": 8,
-        "cost": 3,
-        "food": 8,
-        "napFit": 5,
-        "strollerLogistics": 7,
-        "parkingTransit": 6,
-        "freshness": 10,
-        "worthDrive": 8
-      },
-      "tags": [
-        "morning",
-        "outdoor",
-        "food"
-      ],
-      "cautions": [
-        "crowded",
-        "parking-hard",
-        "needs-ticket",
-        "loud",
-        "heat-risk"
-      ],
-      "label": "Closest big-ticket option",
-      "time": "Sat-Sun, Oct 17-18; check park hours",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T20:00:00-07:00",
-      "place": "California's Great America, Santa Clara",
-      "cost": "Park admission and parking required",
-      "food": "Many park food options; outside dining nearby",
-      "why": "The extended season adds a close theme-park option with family rides, though cost, noise, and crowds lower its toddler score.",
-      "sourceName": "Six Flags",
-      "sourceType": "official park announcement",
-      "confidence": "high",
-      "eventUrl": "https://www.sixflags.com/blog/california-s-great-america-has-officially-extended-its-season",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=California's%20Great%20America%20Santa%20Clara%20CA",
       "score": 76
     },
     {
@@ -810,7 +840,7 @@
       "scoreBreakdown": {
         "distance": 8,
         "toddlerFit": 10,
-        "weatherFit": 8,
+        "weatherFit": 9,
         "cost": 5,
         "food": 7,
         "napFit": 8,
@@ -825,17 +855,16 @@
       ],
       "cautions": [
         "needs-ticket",
-        "crowded",
-        "heat-risk"
+        "crowded"
       ],
-      "label": "Reliable toddler favorite",
-      "time": "Sat-Sun, Oct 17-18; check current hours",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T16:00:00-07:00",
+      "label": "Reliable toddler backup",
+      "time": "Sat-Sun, Oct 24-25; check current hours",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T16:00:00-07:00",
       "place": "Happy Hollow Park & Zoo, San Jose",
       "cost": "Admission and parking required",
       "food": "Cafe and picnic options on site",
-      "why": "Small-animal exhibits and toddler-friendly rides make this a dependable backup when a flexible venue is better than a timed festival.",
+      "why": "Small-animal exhibits and toddler-friendly rides provide a dependable flexible alternative to timed festivals.",
       "sourceName": "Happy Hollow Park & Zoo",
       "sourceType": "official venue page",
       "confidence": "medium",
@@ -866,20 +895,58 @@
         "needs-ticket",
         "crowded"
       ],
-      "label": "Best mixed indoor-outdoor backup",
-      "time": "Sat-Sun, Oct 17-18; reserve an entry time",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
+      "label": "Best compact science + animals",
+      "time": "Sat-Sun, Oct 24-25; reserve an entry time",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
       "place": "Palo Alto Junior Museum & Zoo",
       "cost": "Admission or reservation may be required",
       "food": "Bring snacks; Midtown Palo Alto restaurants nearby",
-      "why": "Compact science exhibits and a small zoo are especially well matched to ages 0-5 and work in almost any weather.",
+      "why": "Compact science exhibits and a small zoo are especially well matched to ages 0-5 and easy to complete before nap.",
       "sourceName": "Palo Alto Junior Museum & Zoo",
       "sourceType": "official venue page",
       "confidence": "medium",
       "eventUrl": "https://www.paloaltozoo.org/Home",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Palo%20Alto%20Junior%20Museum%20and%20Zoo%20CA",
       "score": 74
+    },
+    {
+      "title": "Children's Discovery Museum Play Day",
+      "scoreBreakdown": {
+        "distance": 8,
+        "toddlerFit": 10,
+        "weatherFit": 10,
+        "cost": 5,
+        "food": 8,
+        "napFit": 8,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 6,
+        "worthDrive": 9
+      },
+      "tags": [
+        "morning",
+        "indoor"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "crowded",
+        "parking-hard"
+      ],
+      "label": "Best indoor toddler museum",
+      "time": "Sat-Sun, Oct 24-25; museum open 9:30 AM-4:30 PM",
+      "startDateTime": "2026-10-24T09:30:00-07:00",
+      "endDateTime": "2026-10-25T16:30:00-07:00",
+      "place": "Children's Discovery Museum of San Jose",
+      "cost": "Museum admission and parking required",
+      "food": "Museum cafe area and family-friendly downtown restaurants nearby",
+      "why": "Hands-on water, pretend-play, and early-learning exhibits offer a reliable indoor choice designed around young children.",
+      "sourceName": "Children's Discovery Museum of San Jose",
+      "sourceType": "official museum calendar",
+      "confidence": "medium",
+      "eventUrl": "https://www.cdm.org/calendar/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Children's%20Discovery%20Museum%20San%20Jose%20CA",
+      "score": 73
     },
     {
       "title": "The Tech Interactive",
@@ -904,20 +971,57 @@
         "crowded",
         "parking-hard"
       ],
-      "label": "Best all-indoor backup",
-      "time": "Sat-Sun, Oct 17-18; check current hours",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
+      "label": "Best all-indoor sibling option",
+      "time": "Sat-Sun, Oct 24-25; check current hours",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
       "place": "The Tech Interactive, San Jose",
       "cost": "Admission and downtown parking required",
       "food": "Downtown San Jose restaurants and museum food options nearby",
-      "why": "Hands-on science exhibits provide a weather-proof fallback, especially for families with older siblings.",
+      "why": "Hands-on science exhibits are a solid indoor fallback, especially for families balancing toddlers with older siblings.",
       "sourceName": "The Tech Interactive",
       "sourceType": "official venue page",
       "confidence": "medium",
       "eventUrl": "https://www.thetech.org/",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20Tech%20Interactive%20San%20Jose%20CA",
-      "score": 73
+      "score": 72
+    },
+    {
+      "title": "Hiller Aviation Museum",
+      "scoreBreakdown": {
+        "distance": 5,
+        "toddlerFit": 8,
+        "weatherFit": 10,
+        "cost": 5,
+        "food": 6,
+        "napFit": 6,
+        "strollerLogistics": 8,
+        "parkingTransit": 7,
+        "freshness": 6,
+        "worthDrive": 8
+      },
+      "tags": [
+        "morning",
+        "indoor"
+      ],
+      "cautions": [
+        "needs-ticket",
+        "longer-drive"
+      ],
+      "label": "Best airplane day",
+      "time": "Sat-Sun, Oct 24-25; check current hours",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
+      "place": "Hiller Aviation Museum, San Carlos",
+      "cost": "Museum admission required",
+      "food": "Airport-area cafes and Redwood Shores dining nearby",
+      "why": "Real aircraft and hands-on displays make a strong indoor destination for vehicle-loving toddlers.",
+      "sourceName": "Hiller Aviation Museum",
+      "sourceType": "official venue page",
+      "confidence": "medium",
+      "eventUrl": "https://www.hiller.org/",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hiller%20Aviation%20Museum%20San%20Carlos%20CA",
+      "score": 71
     },
     {
       "title": "CuriOdyssey Science Playground + Animals",
@@ -944,9 +1048,9 @@
         "limited-food"
       ],
       "label": "Best Peninsula science + wildlife",
-      "time": "Sat-Sun, Oct 17-18; check current hours",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
+      "time": "Sat-Sun, Oct 24-25; check current hours",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T17:00:00-07:00",
       "place": "CuriOdyssey, San Mateo",
       "cost": "Admission and Coyote Point parking required",
       "food": "Pack snacks; limited immediate food options",
@@ -956,88 +1060,51 @@
       "confidence": "medium",
       "eventUrl": "https://curiodyssey.org/visit/hours-admission/",
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=CuriOdyssey%20San%20Mateo%20CA",
-      "score": 72
+      "score": 70
     },
     {
-      "title": "Hiller Aviation Museum",
+      "title": "Japanese Storytime + Early Learning Playtime",
       "scoreBreakdown": {
-        "distance": 4,
-        "toddlerFit": 8,
-        "weatherFit": 10,
-        "cost": 5,
-        "food": 6,
-        "napFit": 6,
-        "strollerLogistics": 8,
-        "parkingTransit": 7,
-        "freshness": 6,
-        "worthDrive": 8
-      },
-      "tags": [
-        "morning",
-        "indoor"
-      ],
-      "cautions": [
-        "needs-ticket",
-        "longer-drive"
-      ],
-      "label": "Best airplane day",
-      "time": "Sat-Sun, Oct 17-18; check current hours",
-      "startDateTime": "2026-10-17T10:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
-      "place": "Hiller Aviation Museum, San Carlos",
-      "cost": "Museum admission required",
-      "food": "Airport-area cafes and Redwood Shores dining nearby",
-      "why": "Real aircraft and hands-on displays make a strong indoor destination for vehicle-loving toddlers.",
-      "sourceName": "Hiller Aviation Museum",
-      "sourceType": "official venue page",
-      "confidence": "medium",
-      "eventUrl": "https://www.hiller.org/",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hiller%20Aviation%20Museum%20San%20Carlos%20CA",
-      "score": 71
-    },
-    {
-      "title": "Sunday Family Storytime + Stay & Play",
-      "scoreBreakdown": {
-        "distance": 7,
+        "distance": 10,
         "toddlerFit": 10,
         "weatherFit": 10,
         "cost": 10,
-        "food": 6,
+        "food": 7,
         "napFit": 6,
         "strollerLogistics": 8,
         "parkingTransit": 7,
         "freshness": 9,
-        "worthDrive": 6
+        "worthDrive": 7
       },
       "tags": [
         "free",
         "indoor"
       ],
       "cautions": [],
-      "label": "Best free after-nap reset",
-      "time": "Sun, Oct 18, 3:15-4:15 PM",
-      "startDateTime": "2026-10-18T15:15:00-07:00",
-      "endDateTime": "2026-10-18T16:15:00-07:00",
-      "place": "East San Jose Carnegie Branch Library",
+      "label": "Best Sunday library plan",
+      "time": "Sun, Oct 25, storytime 11:00 AM; playtime 3:00 PM",
+      "startDateTime": "2026-10-25T11:00:00-07:00",
+      "endDateTime": "2026-10-25T16:00:00-07:00",
+      "place": "Sunnyvale Public Library",
       "cost": "Free",
-      "food": "Story Road and East San Jose food options nearby",
-      "why": "Stories followed by open play give toddlers a free, low-commitment Sunday afternoon activity.",
-      "sourceName": "San Jose Public Library",
+      "food": "Downtown Sunnyvale and El Camino restaurants nearby",
+      "why": "Choose the morning bilingual storytime or return after nap for open early-learning play; both are free and close to home.",
+      "sourceName": "Sunnyvale Public Library",
       "sourceType": "official library calendar",
       "confidence": "high",
-      "eventUrl": "https://sjpl.bibliocommons.com/v2/events?series=6a70d18d0d65ac3600441594",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=East%20San%20Jose%20Carnegie%20Branch%20Library%20San%20Jose%20CA",
-      "score": 70
+      "eventUrl": "https://www.library.sunnyvale.ca.gov/events/calendar-month-view/-curm-10/-cury-2026/-direct-true",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sunnyvale%20Public%20Library%20Sunnyvale%20CA",
+      "score": 69
     },
     {
-      "title": "King Library Indoor Family Storytime + Stay & Play",
+      "title": "Sunday Reading to Children",
       "scoreBreakdown": {
-        "distance": 8,
-        "toddlerFit": 10,
+        "distance": 7,
+        "toddlerFit": 8,
         "weatherFit": 10,
         "cost": 10,
-        "food": 8,
-        "napFit": 5,
+        "food": 6,
+        "napFit": 6,
         "strollerLogistics": 8,
         "parkingTransit": 7,
         "freshness": 9,
@@ -1048,22 +1115,62 @@
         "indoor"
       ],
       "cautions": [
-        "parking-hard"
+        "verify-branch"
       ],
-      "label": "Best downtown Sunday storytime",
-      "time": "Sun, Oct 18, 4:00-5:00 PM",
-      "startDateTime": "2026-10-18T16:00:00-07:00",
-      "endDateTime": "2026-10-18T17:00:00-07:00",
-      "place": "Dr. Martin Luther King, Jr. Library, San Jose",
-      "cost": "Free; downtown parking may cost extra",
-      "food": "Many downtown San Jose restaurants nearby",
-      "why": "An indoor late-afternoon story-and-play session can fill the stretch between nap and dinner.",
-      "sourceName": "San Jose Public Library",
+      "label": "Simple Sunday indoor option",
+      "time": "Sun, Oct 25, 1:00-2:00 PM",
+      "startDateTime": "2026-10-25T13:00:00-07:00",
+      "endDateTime": "2026-10-25T14:00:00-07:00",
+      "place": "San José Public Library branch; verify listing",
+      "cost": "Free",
+      "food": "Varies by branch; plan lunch before arrival",
+      "why": "A low-cost, low-pressure reading session can fill a quiet Sunday hour, but confirm the branch on the live listing before leaving.",
+      "sourceName": "San José Public Library",
       "sourceType": "official library calendar",
-      "confidence": "high",
-      "eventUrl": "https://sjpl.bibliocommons.com/v2/events?locations=00&types=5d65e9ae2f3a81f8aeaabbaf",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dr%20Martin%20Luther%20King%20Jr%20Library%20San%20Jose%20CA",
-      "score": 69
+      "confidence": "medium",
+      "eventUrl": "https://sjpl.bibliocommons.com/v2/events?types=5d65e9ae2f3a81f8aeaabbaf",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=San%20Jose%20Public%20Library%20San%20Jose%20CA",
+      "score": 68
+    },
+    {
+      "title": "California's Great America Bonus Weekend",
+      "scoreBreakdown": {
+        "distance": 10,
+        "toddlerFit": 7,
+        "weatherFit": 9,
+        "cost": 3,
+        "food": 8,
+        "napFit": 5,
+        "strollerLogistics": 8,
+        "parkingTransit": 6,
+        "freshness": 9,
+        "worthDrive": 7
+      },
+      "tags": [
+        "morning",
+        "outdoor",
+        "food"
+      ],
+      "cautions": [
+        "crowded",
+        "parking-hard",
+        "needs-ticket",
+        "loud"
+      ],
+      "label": "Closest big-ticket option",
+      "time": "Sat-Sun, Oct 24-25; check park hours",
+      "startDateTime": "2026-10-24T10:00:00-07:00",
+      "endDateTime": "2026-10-25T20:00:00-07:00",
+      "place": "California's Great America, Santa Clara",
+      "cost": "Park admission and parking required",
+      "food": "Many park food options; outside dining nearby",
+      "why": "The extended season adds a close theme-park option with family rides, though cost, noise, and crowds lower its toddler score.",
+      "sourceName": "Six Flags",
+      "sourceType": "official park announcement",
+      "confidence": "medium",
+      "eventUrl": "https://www.sixflags.com/blog/california-s-great-america-has-officially-extended-its-season",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=California's%20Great%20America%20Santa%20Clara%20CA",
+      "score": 67
     }
   ]
 }
